@@ -39,10 +39,10 @@
         <prop name="Clear background">No</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox integer scale</prop>
-        <prop name="Fullscreen scaling">Low quality</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
         <prop name="Fullscreen scaling quality">Low</prop>
         <prop name="Hide address bar">No</prop>
-        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
         <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Point</prop>
         <prop name="Use iOS retina display">All devices</prop>
@@ -80,23 +80,53 @@
         <object-type global="1" name="Slimebud" sid="321576689533446">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable comment="Scale modificator of goutte" name="GScaleMod" sid="928138505333816" type="number" />
                 <instance-variable comment="Number of green slime available" name="GreenSlime" sid="198999905167594" type="number" />
+                <instance-variable comment="Scale modificator of goutte" name="GScaleMod" sid="928138505333816" type="number" />
                 <instance-variable comment="The clickable green goutte value" name="CGGValue" sid="972129410504666" type="number" />
                 <instance-variable comment="The passive green goutte value" name="PGGValue" sid="131042942101186" type="number" />
+                <instance-variable name="RedSlime" sid="153165605580361" type="number" />
+                <instance-variable comment="Scale Modificator of Red Slime" name="RScaleMod" sid="819704675500810" type="number" />
+                <instance-variable comment="Drop Rate or Red Goutte" name="RGDropRate" sid="351921778929477" type="number" />
+                <instance-variable comment="Value of Clickable Red Goutte" name="CRGValue" sid="215036405291038" type="number" />
+                <instance-variable comment="Value of Passive Red Goutte" name="PRGValue" sid="805836000827462" type="number" />
+                <instance-variable comment="Meta currency " name="SlimeLeftOver" sid="248954969393109" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="580325058367682" speed="2">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Game Design Resources\LE Slime V2.png">
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="580325058367682" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.954545" original-source="D:\Game Design Resources\LE Slime V2.png">
                         <collision-poly>
-                            <point x="0.291016" y="0.185547" />
-                            <point x="0.658203" y="0.191406" />
-                            <point x="0.779297" y="0.316406" />
-                            <point x="0.78125" y="0.5" />
-                            <point x="0.783203" y="0.810547" />
-                            <point x="0.5" y="0.8125" />
-                            <point x="0.15625" y="0.814453" />
-                            <point x="0.158203" y="0.353516" />
+                            <point x="0.241478" y="0.0426138" />
+                            <point x="0.775568" y="0.051136" />
+                            <point x="0.951705" y="0.232954" />
+                            <point x="0.954545" y="0.5" />
+                            <point x="0.957386" y="0.951705" />
+                            <point x="0.545455" y="0.954545" />
+                            <point x="0.0454545" y="0.957386" />
+                            <point x="0.0482953" y="0.286932" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.956522" original-source="D:\Users\Karotteman\Downloads\LE_Slime_T2_Frame_2.png">
+                        <collision-poly>
+                            <point x="0.230114" y="0.0434783" />
+                            <point x="0.764205" y="0.0407609" />
+                            <point x="0.954546" y="0.217391" />
+                            <point x="0.909091" y="0.521739" />
+                            <point x="0.863636" y="0.826087" />
+                            <point x="0.545455" y="0.956522" />
+                            <point x="0.136364" y="0.913043" />
+                            <point x="0.0511364" y="0.277174" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52381" hotspotY="0.958333" original-source="D:\Users\Karotteman\Downloads\LE_Slime_T2_Frame_3.png">
+                        <collision-poly>
+                            <point x="0.272186" y="0.0390625" />
+                            <point x="0.775974" y="0.0416667" />
+                            <point x="0.9375" y="0.184028" />
+                            <point x="1" y="0.597222" />
+                            <point x="1" y="0.986111" />
+                            <point x="0.640693" y="1" />
+                            <point x="0.017316" y="1" />
+                            <point x="0.104167" y="0.260417" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -440,6 +470,64 @@
                 <type>TButton1_Description</type>
                 <type>TButton1_Cost</type>
             </container>
+        </object-type>
+        <object-type name="TotalRS_Icon" sid="535117062659619">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="178912041124016" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Jump\png\SlimeRed_Jump10.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0.71875" />
+                            <point x="0.1875" y="1" />
+                            <point x="0" y="0.238281" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TotalRS_Value" sid="121350024701306">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="GSpC_Value" sid="720379104763653">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="RSpC_Value" sid="641678546459715">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite2" sid="646140655321084">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647632615666937" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.470588" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Jump\png\Slime_Jump11.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.0588235" />
+                            <point x="0.928571" y="0.647059" />
+                            <point x="0.857143" y="0.352941" />
+                            <point x="0.428571" y="0.941176" />
+                            <point x="0.142857" y="0.352941" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="873201179802925">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="768298591463703" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.529412" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Jump\png\SlimeRed_Jump11.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.0588235" />
+                            <point x="0.928571" y="0.647059" />
+                            <point x="0.857143" y="0.352941" />
+                            <point x="0.428571" y="0.941176" />
+                            <point x="0.142857" y="0.352941" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

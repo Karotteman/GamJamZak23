@@ -130,22 +130,28 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <GScaleMod>1</GScaleMod>
                         <GreenSlime>0</GreenSlime>
+                        <GScaleMod>1</GScaleMod>
                         <CGGValue>1</CGGValue>
                         <PGGValue>0.1</PGGValue>
+                        <RedSlime>0</RedSlime>
+                        <RScaleMod>1</RScaleMod>
+                        <RGDropRate>0</RGDropRate>
+                        <CRGValue>0</CRGValue>
+                        <PRGValue>0</PRGValue>
+                        <SlimeLeftOver>0</SlimeLeftOver>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>649</x>
-                        <y>593</y>
+                        <x>650</x>
+                        <y>667</y>
                         <z>0</z>
-                        <width>261.045959473</width>
-                        <height>261.045959473</height>
+                        <width>179.469100952</width>
+                        <height>179.469100952</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.954545438</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -220,11 +226,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1079</x>
-                        <y>751</y>
+                        <x>1080</x>
+                        <y>750</y>
                         <z>0</z>
-                        <width>34.20526123</width>
-                        <height>34.20526123</height>
+                        <width>35</width>
+                        <height>35</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -247,8 +253,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1113</x>
-                        <y>753</y>
+                        <x>1100</x>
+                        <y>750</y>
                         <z>0</z>
                         <width>107</width>
                         <height>50</height>
@@ -603,6 +609,153 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TotalRS_Icon" uid="28">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1080</x>
+                        <y>840</y>
+                        <z>0</z>
+                        <width>35</width>
+                        <height>35</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TotalRS_Value" uid="29">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-32,700,0</font>
+                        <color>255,51,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1100</x>
+                        <y>840</y>
+                        <z>0</z>
+                        <width>152</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="GSpC_Value" uid="30">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-32,700,0</font>
+                        <color>0,204,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1100</x>
+                        <y>790</y>
+                        <z>0</z>
+                        <width>122</width>
+                        <height>54</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="RSpC_Value" uid="31">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-32,700,0</font>
+                        <color>255,51,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1100</x>
+                        <y>880</y>
+                        <z>0</z>
+                        <width>122</width>
+                        <height>54</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite2" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1080</x>
+                        <y>790</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.470588237</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite3" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1080</x>
+                        <y>880</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.529411793</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

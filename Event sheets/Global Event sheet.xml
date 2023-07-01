@@ -106,6 +106,15 @@
                 <action id="0" name="Set text" sid="315589372487484" type="TotalGS_Value">
                     <param id="0" name="Text">Slimebud.GreenSlime</param>
                 </action>
+                <action id="0" name="Set text" sid="436550979735950" type="TotalRS_Value">
+                    <param id="0" name="Text">Slimebud.RedSlime</param>
+                </action>
+                <action id="0" name="Set text" sid="253753279015334" type="GSpC_Value">
+                    <param id="0" name="Text">Slimebud.PGGValue</param>
+                </action>
+                <action id="0" name="Set text" sid="728993309324302" type="RSpC_Value">
+                    <param id="0" name="Text">Slimebud.PRGValue</param>
+                </action>
             </actions>
         </event-block>
     </events>
