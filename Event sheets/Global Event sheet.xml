@@ -11,93 +11,6 @@
             </conditions>
             <actions />
         </event-block>
-        <event-block sid="733223135984767">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="281773963554511" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Tank</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="206705600021175" type="System">
-                    <param id="0" name="Object to create">CGreenGoutte</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">640</param>
-                    <param id="3" name="Y">230</param>
-                </action>
-                <action id="9" name="Set scale" sid="486176302197564" type="CGreenGoutte">
-                    <param id="0" name="Scale">Slimebud.GScaleMod</param>
-                </action>
-                <action id="-10" name="Set value" sid="162682037114436" type="Slimebud">
-                    <param id="0" name="Instance variable">GScaleMod</param>
-                    <param id="1" name="Value">Slimebud.GScaleMod + 0.1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="766437486993740">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="444519167378098" type="CGreenGoutte">
-                    <param id="0" name="Object">Slimebud</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="384684768866409" type="CGreenGoutte">
-                    <param id="0" name="Animation">&quot;explode&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="775498144074820" type="CGreenGoutte">
-                    <param id="0" name="Object">CGreenGoutte</param>
-                    <param id="1" name="State">0</param>
-                </action>
-                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="226846176332525" type="CGreenGoutte">
-                    <param id="0" name="Object">Slimebud</param>
-                    <param id="1" name="State">0</param>
-                </action>
-                <action behavior="Physics" id="15" name="Set velocity" sid="506933743512284" type="CGreenGoutte">
-                    <param id="0" name="X component">0</param>
-                    <param id="1" name="Y component">0</param>
-                </action>
-                <action behavior="Physics" id="21" name="Set immovable" sid="263891938883325" type="CGreenGoutte">
-                    <param id="0" name="Setting">1</param>
-                </action>
-                <action id="-11" name="Add to" sid="483226459693994" type="Slimebud">
-                    <param id="0" name="Instance variable">GreenSlime</param>
-                    <param id="1" name="Value">Slimebud.CGGValue</param>
-                </action>
-                <action id="-3" name="Create object" sid="582341136509045" type="System">
-                    <param id="0" name="Object to create">GGGain</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">620+random(-100,100)</param>
-                    <param id="3" name="Y">500</param>
-                </action>
-                <action id="0" name="Set text" sid="295137927104203" type="GGGain">
-                    <param id="0" name="Text">&quot;+&quot;&amp;Slimebud.CGGValue</param>
-                </action>
-                <action behavior="Physics" id="15" name="Set velocity" sid="649748114948568" type="GGGain">
-                    <param id="0" name="X component">0</param>
-                    <param id="1" name="Y component">-400</param>
-                </action>
-                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="800421141548251" type="GGGain">
-                    <param id="0" name="Object">CGreenGoutte</param>
-                    <param id="1" name="State">0</param>
-                </action>
-                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="322365111831701" type="GGGain">
-                    <param id="0" name="Object">GGGain</param>
-                    <param id="1" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="922033727150254">
-            <conditions>
-                <condition id="4" name="On finished" sid="400000864308424" type="CGreenGoutte">
-                    <param id="0" name="Animation">&quot;explode&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="190370233628614" type="CGreenGoutte" />
-            </actions>
-        </event-block>
         <event-block sid="225120274867862">
             <conditions>
                 <condition id="-1" name="Every tick" sid="921670611358278" type="System" />
@@ -115,7 +28,243 @@
                 <action id="0" name="Set text" sid="728993309324302" type="RSpC_Value">
                     <param id="0" name="Text">Slimebud.PRGValue</param>
                 </action>
+                <action id="0" name="Set text" sid="235862692018000" type="TButton1_Cost">
+                    <param id="0" name="Text">Buttons.Cost</param>
+                </action>
             </actions>
         </event-block>
+        <event-block sid="733223135984767">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="281773963554511" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Tank</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="940947105618423">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="911953908121472" type="System">
+                            <param id="0" name="First value">random(0,100)</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">Slimebud.RGDropRate</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="903365605760933" type="System">
+                            <param id="0" name="Object to create">CRedGoutte</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">640</param>
+                            <param id="3" name="Y">230</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="516826757703709" type="CRedGoutte">
+                            <param id="0" name="Scale">Slimebud.GScaleMod</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="151091894712335">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="649407174053788" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="206705600021175" type="System">
+                            <param id="0" name="Object to create">CGreenGoutte</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">640</param>
+                            <param id="3" name="Y">230</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="486176302197564" type="CGreenGoutte">
+                            <param id="0" name="Scale">Slimebud.GScaleMod</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="203997835530000" title="Green Slime">
+            <sub-events>
+                <event-block sid="766437486993740">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="444519167378098" type="CGreenGoutte">
+                            <param id="0" name="Object">Slimebud</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="384684768866409" type="CGreenGoutte">
+                            <param id="0" name="Animation">&quot;explode&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="775498144074820" type="CGreenGoutte">
+                            <param id="0" name="Object">CGreenGoutte</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="919316643652483" type="CGreenGoutte">
+                            <param id="0" name="Object">CRedGoutte</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="226846176332525" type="CGreenGoutte">
+                            <param id="0" name="Object">Slimebud</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="15" name="Set velocity" sid="506933743512284" type="CGreenGoutte">
+                            <param id="0" name="X component">0</param>
+                            <param id="1" name="Y component">0</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="263891938883325" type="CGreenGoutte">
+                            <param id="0" name="Setting">1</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="483226459693994" type="Slimebud">
+                            <param id="0" name="Instance variable">GreenSlime</param>
+                            <param id="1" name="Value">Slimebud.CGGValue</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="582341136509045" type="System">
+                            <param id="0" name="Object to create">GGGain</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">620+random(-100,100)</param>
+                            <param id="3" name="Y">500</param>
+                        </action>
+                        <action id="0" name="Set text" sid="295137927104203" type="GGGain">
+                            <param id="0" name="Text">&quot;+&quot;&amp;Slimebud.CGGValue</param>
+                        </action>
+                        <action behavior="Physics" id="15" name="Set velocity" sid="649748114948568" type="GGGain">
+                            <param id="0" name="X component">0</param>
+                            <param id="1" name="Y component">-400</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="800421141548251" type="GGGain">
+                            <param id="0" name="Object">CGreenGoutte</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="914044956848876" type="GGGain">
+                            <param id="0" name="Object">CRedGoutte</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="322365111831701" type="GGGain">
+                            <param id="0" name="Object">GGGain</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="922033727150254">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="400000864308424" type="CGreenGoutte">
+                            <param id="0" name="Animation">&quot;explode&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="190370233628614" type="CGreenGoutte" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="532137518062659" title="Red Slime">
+            <sub-events>
+                <event-block sid="935205018900756">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="917391368327590" type="CRedGoutte">
+                            <param id="0" name="Object">Slimebud</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="594543341922008" type="CRedGoutte">
+                            <param id="0" name="Animation">&quot;explode&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="677440110594296" type="CRedGoutte">
+                            <param id="0" name="Object">CRedGoutte</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="389996166328459" type="CRedGoutte">
+                            <param id="0" name="Object">CGreenGoutte</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="599262807328818" type="CRedGoutte">
+                            <param id="0" name="Object">Slimebud</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="15" name="Set velocity" sid="822851903819274" type="CRedGoutte">
+                            <param id="0" name="X component">0</param>
+                            <param id="1" name="Y component">0</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="326750889395145" type="CRedGoutte">
+                            <param id="0" name="Setting">1</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="500294496863038" type="Slimebud">
+                            <param id="0" name="Instance variable">GreenSlime</param>
+                            <param id="1" name="Value">-(Slimebud.GreenLoseOnRed/100*Slimebud.GreenSlime)</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="735609520495365" type="Slimebud">
+                            <param id="0" name="Instance variable">RedSlime</param>
+                            <param id="1" name="Value">Slimebud.CRGValue</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="538024346443299" type="System">
+                            <param id="0" name="Object to create">GGGain</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">620+random(-100,100)</param>
+                            <param id="3" name="Y">500</param>
+                        </action>
+                        <action id="0" name="Set text" sid="866873936570186" type="GGGain">
+                            <param id="0" name="Text">&quot;+&quot;&amp;Slimebud.CRGValue</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="324187602582418" type="GGGain">
+                            <param id="0" name="Color">rgb(255, 51, 0)</param>
+                        </action>
+                        <action behavior="Physics" id="15" name="Set velocity" sid="966249946412447" type="GGGain">
+                            <param id="0" name="X component">0</param>
+                            <param id="1" name="Y component">-400</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="882664894242295" type="GGGain">
+                            <param id="0" name="Object">CGreenGoutte</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="831483734029886" type="GGGain">
+                            <param id="0" name="Object">CRedGoutte</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="187645104874709" type="GGGain">
+                            <param id="0" name="Object">GGGain</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="446283626816696" type="System">
+                            <param id="0" name="Object to create">GGGain</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">620+random(-100,100)</param>
+                            <param id="3" name="Y">500</param>
+                        </action>
+                        <action id="0" name="Set text" sid="983294777272530" type="GGGain">
+                            <param id="0" name="Text">&quot;-&quot;&amp;(Slimebud.GreenLoseOnRed/100*Slimebud.GreenSlime)</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="181766580842497" type="GGGain">
+                            <param id="0" name="Color">rgb(0, 153, 0)</param>
+                        </action>
+                        <action behavior="Physics" id="15" name="Set velocity" sid="801540242037635" type="GGGain">
+                            <param id="0" name="X component">0</param>
+                            <param id="1" name="Y component">-400</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="617450327046039" type="GGGain">
+                            <param id="0" name="Object">CGreenGoutte</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="773612418031558" type="GGGain">
+                            <param id="0" name="Object">CRedGoutte</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="523093989388647" type="GGGain">
+                            <param id="0" name="Object">GGGain</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="608879816001358">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="539052571703453" type="CRedGoutte">
+                            <param id="0" name="Animation">&quot;explode&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="822502492756678" type="CRedGoutte" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

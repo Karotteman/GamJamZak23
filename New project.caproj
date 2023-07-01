@@ -90,6 +90,7 @@
                 <instance-variable comment="Value of Clickable Red Goutte" name="CRGValue" sid="215036405291038" type="number" />
                 <instance-variable comment="Value of Passive Red Goutte" name="PRGValue" sid="805836000827462" type="number" />
                 <instance-variable comment="Meta currency " name="SlimeLeftOver" sid="248954969393109" type="number" />
+                <instance-variable comment="Green Slime value perte quand rouge tombe" name="GreenLoseOnRed" sid="806649040743573" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="580325058367682" speed="3">
@@ -526,6 +527,93 @@
                             <point x="0.857143" y="0.352941" />
                             <point x="0.428571" y="0.941176" />
                             <point x="0.142857" y="0.352941" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CRedGoutte" sid="813420883661856">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="471358467645409">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="536356717687655" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Jump\png\SlimeRed_Jump12.png">
+                        <collision-poly>
+                            <point x="0.421875" y="0.658537" />
+                            <point x="0.518555" y="0.466463" />
+                            <point x="0.595703" y="0.637195" />
+                            <point x="0.592773" y="0.795732" />
+                            <point x="0.5" y="0.853659" />
+                            <point x="0.439453" y="0.803353" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="9" loop="0" name="explode" pingpong="0" repeatcount="1" repeatto="0" sid="608629762721792" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Jump\png\SlimeRed_Jump14.png">
+                        <collision-poly>
+                            <point x="0.589844" y="0.0548778" />
+                            <point x="0.589844" y="0" />
+                            <point x="0.556641" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Jump\png\SlimeRed_Jump15.png">
+                        <collision-poly>
+                            <point x="0.599609" y="0" />
+                            <point x="0.568359" y="0.0487805" />
+                            <point x="0.505859" y="0.00609759" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Death\png\SlimeRed_Death5.png">
+                        <collision-poly>
+                            <point x="0.535156" y="0" />
+                            <point x="0.576172" y="0.0701219" />
+                            <point x="0.605469" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Death\png\SlimeRed_Death6.png">
+                        <collision-poly>
+                            <point x="0.564453" y="0.10061" />
+                            <point x="0.451172" y="0" />
+                            <point x="0.619141" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Death\png\SlimeRed_Death7.png">
+                        <collision-poly>
+                            <point x="0.582031" y="0.0548781" />
+                            <point x="0.439453" y="0" />
+                            <point x="0.642578" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Death\png\SlimeRed_Death8.png">
+                        <collision-poly>
+                            <point x="0.488281" y="0" />
+                            <point x="0.685547" y="0" />
+                            <point x="0.572266" y="0.073171" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Death\png\SlimeRed_Death9.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.328125" y="0.176829" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Death\png\SlimeRed_Death10.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.460938" y="0.109756" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Death\png\SlimeRed_Death11.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.429688" y="0.109756" />
                         </collision-poly>
                     </frame>
                 </animation>
