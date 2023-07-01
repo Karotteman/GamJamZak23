@@ -372,6 +372,8 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Cost" sid="900007966578787" type="number" />
+                <instance-variable comment="Level of the Erosion upgrade" name="ErosionLevel" sid="488589126075259" type="number" />
+                <instance-variable name="MaxLevel" sid="129454286197001" type="number" />
             </instance-variables>
             <container>
                 <type>Buttons</type>
@@ -616,6 +618,15 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TButton2_Name" sid="209960251070380">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TButton2_Cost" sid="369341897214059">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TButton2_Description" sid="603995584145333">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

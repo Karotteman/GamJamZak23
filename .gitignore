@@ -173,3 +173,6 @@ pip-log.txt
 
 # Construct 2 backups
 .backup1
+/Layouts/Layout 1.uistate.xml
+/New project.capx.backup1
+/New project.uistate.xml
