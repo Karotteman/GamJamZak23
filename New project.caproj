@@ -86,7 +86,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="580325058367682" speed="2">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Karotteman\Downloads\LE_Slime.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Game Design Resources\LE Slime V2.png">
                         <collision-poly>
                             <point x="0.291016" y="0.185547" />
                             <point x="0.658203" y="0.191406" />
