@@ -450,6 +450,8 @@
                     </properties>
                     <instance-variables>
                         <Cost>0</Cost>
+                        <ErosionLevel>0</ErosionLevel>
+                        <MaxLevel>100</MaxLevel>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -534,7 +536,7 @@
                 </instance>
                 <instance type="TButton1_Name" uid="25">
                     <properties>
-                        <text>NAME</text>
+                        <text>EROSION</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Retro Gaming,-21.6,400,0</font>
                         <color>0,0,0</color>
@@ -561,7 +563,7 @@
                 </instance>
                 <instance type="TButton1_Description" uid="26">
                     <properties>
-                        <text>Text</text>
+                        <text>+0.1 to passive slime drop value.</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Retro Gaming,-16,400,0</font>
                         <color>0,0,0</color>
@@ -578,7 +580,7 @@
                         <y>800</y>
                         <z>0</z>
                         <width>373</width>
-                        <height>59</height>
+                        <height>77</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -756,6 +758,87 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.529411793</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TButton2_Name" uid="34">
+                    <properties>
+                        <text>INOFFENSIVE</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-23,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>638</x>
+                        <y>772</y>
+                        <z>0</z>
+                        <width>271</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TButton2_Cost" uid="35">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Right</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>810</x>
+                        <y>773</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TButton2_Description" uid="36">
+                    <properties>
+                        <text>Increases value of red goo drops to 110%. Reduces value of slime drops to 95%.</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>638</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>373</width>
+                        <height>71</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
