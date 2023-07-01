@@ -91,6 +91,7 @@
                 <instance-variable comment="Value of Passive Red Goutte" name="PRGValue" sid="805836000827462" type="number" />
                 <instance-variable comment="Meta currency " name="SlimeLeftOver" sid="248954969393109" type="number" />
                 <instance-variable comment="Green Slime value perte quand rouge tombe" name="GreenLoseOnRed" sid="806649040743573" type="number" />
+                <instance-variable name="NBGperSecond" sid="969522224347343" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="580325058367682" speed="3">

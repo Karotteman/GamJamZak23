@@ -137,10 +137,11 @@
                         <RedSlime>0</RedSlime>
                         <RScaleMod>1</RScaleMod>
                         <RGDropRate>0</RGDropRate>
-                        <CRGValue>0</CRGValue>
-                        <PRGValue>0</PRGValue>
+                        <CRGValue>1</CRGValue>
+                        <PRGValue>0.1</PRGValue>
                         <SlimeLeftOver>0</SlimeLeftOver>
-                        <GreenLoseOnRed>1</GreenLoseOnRed>
+                        <GreenLoseOnRed>0.01</GreenLoseOnRed>
+                        <NBGperSecond>0</NBGperSecond>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -855,8 +856,8 @@
                         <behavior-instance type="Physics">
                             <properties>
                                 <immovable>No</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
-                                <prevent-rotation>No</prevent-rotation>
+                                <collision-mask>Circle</collision-mask>
+                                <prevent-rotation>Yes</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
                                 <elasticity>0.2</elasticity>
