@@ -91,6 +91,18 @@
                 <instance-variable comment="Value of Passive Red Goutte" name="PRGValue" sid="805836000827462" type="number" />
                 <instance-variable comment="Meta currency " name="SlimeLeftOver" sid="248954969393109" type="number" />
                 <instance-variable comment="Green Slime value perte quand rouge tombe" name="GreenLoseOnRed" sid="806649040743573" type="number" />
+<<<<<<< HEAD
+                <instance-variable comment="Multiplicateur pour la valeur des gouttes cliquées" name="CGGMultiplicator" sid="966264628597808" type="number" />
+                <instance-variable comment="Multiplicateur pour la valeur du slime passif" name="PGGMultiplicator" sid="197252449457521" type="number" />
+                <instance-variable comment="Multiplicator to the value of Passive Red Goutte" name="PRGMultiplicator" sid="110744120776345" type="number" />
+                <instance-variable comment="Multiplicateur de valeur pour le slime rouge cliqué" name="CRGMultiplicator" sid="967153629366702" type="number" />
+                <instance-variable comment="Rendement de la PGG" name="PGGBase" sid="215004900548701" type="number" />
+                <instance-variable comment="Rendement de la CGG" name="CGGBase" sid="197551203608739" type="number" />
+                <instance-variable comment="Rendement de la PRG" name="PRGBase" sid="399240952801789" type="number" />
+                <instance-variable comment="Rendement de la CRG" name="CRGBase" sid="751491190679132" type="number" />
+=======
+                <instance-variable name="NBGperSecond" sid="969522224347343" type="number" />
+>>>>>>> 3212a7fab5db4529d66803413ec50a10e7618481
             </instance-variables>
             <animation-folder>
                 <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="580325058367682" speed="3">
@@ -398,6 +410,16 @@
         </object-type>
         <object-type name="Buttons2" sid="868743822361412">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Cost" sid="298403601158909" type="number" />
+                <instance-variable name="Level" sid="776418682236422" type="number" />
+            </instance-variables>
+            <container>
+                <type>Buttons2</type>
+                <type>TButton2_Cost</type>
+                <type>TButton2_Description</type>
+                <type>TButton2_Name</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="207035858685381" speed="5">
                     <frame duration="1" hotspotX="1" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
@@ -532,16 +554,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-<<<<<<< HEAD
-        <object-type name="TButton2_Name" sid="209960251070380">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="TButton2_Cost" sid="369341897214059">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="TButton2_Description" sid="603995584145333">
-            <plugin id="Text" />
-=======
         <object-type name="CRedGoutte" sid="813420883661856">
             <plugin id="Sprite" />
             <behaviors>
@@ -628,7 +640,33 @@
                     </frame>
                 </animation>
             </animation-folder>
->>>>>>> 3f46eb92faf5c601b69fcd638d8f05620d74a45b
+        </object-type>
+        <object-type name="TButton2_Name" sid="209960251070380">
+            <plugin id="Text" />
+            <container>
+                <type>Buttons2</type>
+                <type>TButton2_Cost</type>
+                <type>TButton2_Description</type>
+                <type>TButton2_Name</type>
+            </container>
+        </object-type>
+        <object-type name="TButton2_Cost" sid="369341897214059">
+            <plugin id="Text" />
+            <container>
+                <type>Buttons2</type>
+                <type>TButton2_Cost</type>
+                <type>TButton2_Description</type>
+                <type>TButton2_Name</type>
+            </container>
+        </object-type>
+        <object-type name="TButton2_Description" sid="603995584145333">
+            <plugin id="Text" />
+            <container>
+                <type>Buttons2</type>
+                <type>TButton2_Cost</type>
+                <type>TButton2_Description</type>
+                <type>TButton2_Name</type>
+            </container>
         </object-type>
     </object-folder>
     <families />

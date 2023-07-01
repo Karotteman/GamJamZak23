@@ -134,21 +134,21 @@
                         <GScaleMod>1</GScaleMod>
                         <CGGValue>1</CGGValue>
                         <PGGValue>0.1</PGGValue>
-                        <RedSlime>0</RedSlime>
+                        <RedSlime>10</RedSlime>
                         <RScaleMod>1</RScaleMod>
                         <RGDropRate>0</RGDropRate>
                         <CRGValue>1</CRGValue>
-                        <PRGValue>0.1</PRGValue>
+                        <PRGValue>0</PRGValue>
                         <SlimeLeftOver>0</SlimeLeftOver>
                         <GreenLoseOnRed>0.01</GreenLoseOnRed>
-                        <NBGperSecond>0</NBGperSecond>
+                        <NBGperSecond>1</NBGperSecond>
                         <CGGMultiplicator>1</CGGMultiplicator>
                         <PGGMultiplicator>1</PGGMultiplicator>
                         <PRGMultiplicator>1</PRGMultiplicator>
                         <CRGMultiplicator>1</CRGMultiplicator>
                         <PGGBase>0</PGGBase>
                         <CGGBase>0</CGGBase>
-                        <PRGBase>0</PRGBase>
+                        <PRGBase>1</PRGBase>
                         <CRGBase>0</CRGBase>
                     </instance-variables>
                     <blend-mode>0</blend-mode>

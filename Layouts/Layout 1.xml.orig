@@ -137,10 +137,23 @@
                         <RedSlime>0</RedSlime>
                         <RScaleMod>1</RScaleMod>
                         <RGDropRate>0</RGDropRate>
-                        <CRGValue>0</CRGValue>
-                        <PRGValue>0</PRGValue>
+                        <CRGValue>1</CRGValue>
+                        <PRGValue>0.1</PRGValue>
                         <SlimeLeftOver>0</SlimeLeftOver>
+<<<<<<< HEAD
                         <GreenLoseOnRed>1</GreenLoseOnRed>
+                        <CGGMultiplicator>1</CGGMultiplicator>
+                        <PGGMultiplicator>1</PGGMultiplicator>
+                        <PRGMultiplicator>1</PRGMultiplicator>
+                        <CRGMultiplicator>1</CRGMultiplicator>
+                        <PGGBase>0</PGGBase>
+                        <CGGBase>0</CGGBase>
+                        <PRGBase>0</PRGBase>
+                        <CRGBase>0</CRGBase>
+=======
+                        <GreenLoseOnRed>0.01</GreenLoseOnRed>
+                        <NBGperSecond>0</NBGperSecond>
+>>>>>>> 3212a7fab5db4529d66803413ec50a10e7618481
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -476,6 +489,10 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Cost>0</Cost>
+                        <Level>0</Level>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -604,7 +621,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>309</x>
+                        <x>304</x>
                         <y>773</y>
                         <z>0</z>
                         <width>192</width>
@@ -763,7 +780,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
                 <instance type="TButton2_Name" uid="34">
                     <properties>
                         <text>INOFFENSIVE</text>
@@ -841,8 +857,11 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-=======
-                <instance type="CRedGoutte" uid="34">
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CRedGoutte" uid="37">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -868,15 +887,58 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1366</x>
-                        <y>331</y>
+                        <x>1502</x>
+                        <y>325</y>
                         <z>0</z>
                         <width>64</width>
                         <height>41</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.51219511</hotspotY>
->>>>>>> 3f46eb92faf5c601b69fcd638d8f05620d74a45b
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TotalRS_Icon" uid="38">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1012</x>
+                        <y>782</y>
+                        <z>0</z>
+                        <width>19.183326721</width>
+                        <height>19.183326721</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TotalGS_Icon" uid="39">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>507</x>
+                        <y>782</y>
+                        <z>0</z>
+                        <width>19</width>
+                        <height>19</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -885,7 +947,7 @@
             <effects />
         </layer>
         <layer name="BuddyButtons" sid="564462272788854">
-            <initially-visible>1</initially-visible>
+            <initially-visible>0</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
@@ -930,7 +992,7 @@
             <effects />
         </layer>
         <layer name="MetaButtons" sid="210869617573016">
-            <initially-visible>1</initially-visible>
+            <initially-visible>0</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
