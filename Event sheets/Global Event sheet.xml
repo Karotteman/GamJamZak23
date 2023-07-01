@@ -5,6 +5,14 @@
     <events>
         <include>Button Event sheet</include>
         <comment>When game begin</comment>
+            <actions />
+                <action id="0" name="Play" sid="308951285067288" type="Audio">
+                    <param id="0" name="Audio file">FutureBeatsPops</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
         <event-block sid="225120274867862">
             <conditions>
                 <condition id="-1" name="Every tick" sid="921670611358278" type="System" />
