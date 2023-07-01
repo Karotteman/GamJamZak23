@@ -141,14 +141,6 @@
                         <PRGValue>0</PRGValue>
                         <SlimeLeftOver>0</SlimeLeftOver>
                         <GreenLoseOnRed>1</GreenLoseOnRed>
-                        <CGGMultiplicator>1</CGGMultiplicator>
-                        <PGGMultiplicator>1</PGGMultiplicator>
-                        <PRGMultiplicator>1</PRGMultiplicator>
-                        <CRGMultiplicator>1</CRGMultiplicator>
-                        <PGGBase>0</PGGBase>
-                        <CGGBase>0</CGGBase>
-                        <PRGBase>0</PRGBase>
-                        <CRGBase>0</CRGBase>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -484,10 +476,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <instance-variables>
-                        <Cost>0</Cost>
-                        <Level>0</Level>
-                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -616,7 +604,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>304</x>
+                        <x>309</x>
                         <y>773</y>
                         <z>0</z>
                         <width>192</width>
@@ -775,6 +763,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="TButton2_Name" uid="34">
                     <properties>
                         <text>INOFFENSIVE</text>
@@ -852,11 +841,8 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="CRedGoutte" uid="37">
+=======
+                <instance type="CRedGoutte" uid="34">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -867,8 +853,8 @@
                         <behavior-instance type="Physics">
                             <properties>
                                 <immovable>No</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
-                                <prevent-rotation>No</prevent-rotation>
+                                <collision-mask>Circle</collision-mask>
+                                <prevent-rotation>Yes</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
                                 <elasticity>0.2</elasticity>
@@ -882,58 +868,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1502</x>
-                        <y>325</y>
+                        <x>1366</x>
+                        <y>331</y>
                         <z>0</z>
                         <width>64</width>
                         <height>41</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.51219511</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="TotalRS_Icon" uid="38">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1012</x>
-                        <y>782</y>
-                        <z>0</z>
-                        <width>19.183326721</width>
-                        <height>19.183326721</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="TotalGS_Icon" uid="39">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>507</x>
-                        <y>782</y>
-                        <z>0</z>
-                        <width>19</width>
-                        <height>19</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+>>>>>>> 3f46eb92faf5c601b69fcd638d8f05620d74a45b
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

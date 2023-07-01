@@ -5,17 +5,15 @@
     <events>
         <include>Button Event sheet</include>
         <comment>When game begin</comment>
-        <event-block sid="156768545052311">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="669582610897827" type="System" />
-            </conditions>
-            <actions />
-        </event-block>
         <event-block sid="225120274867862">
             <conditions>
                 <condition id="-1" name="Every tick" sid="921670611358278" type="System" />
             </conditions>
             <actions>
+                <action id="-10" name="Set value" sid="244772469821563" type="Slimebud">
+                    <param id="0" name="Instance variable">PGGValue</param>
+                    <param id="1" name="Value">Slimebud.PGGBase*Slimebud.PGGMultiplicator</param>
+                </action>
                 <action id="0" name="Set text" sid="315589372487484" type="TotalGS_Value">
                     <param id="0" name="Text">Slimebud.GreenSlime</param>
                 </action>
@@ -30,6 +28,9 @@
                 </action>
                 <action id="0" name="Set text" sid="235862692018000" type="TButton1_Cost">
                     <param id="0" name="Text">Buttons.Cost</param>
+                </action>
+                <action id="0" name="Set text" sid="635192551465722" type="TButton2_Cost">
+                    <param id="0" name="Text">Buttons2.Cost</param>
                 </action>
             </actions>
         </event-block>

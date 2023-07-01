@@ -128,7 +128,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Script relatif au bon fonctionnement du premier bouton" sid="491083067253942" title="Button_1">
+        <event-group description="Script relatif au bon fonctionnement du premier bouton" sid="491083067253942" title="Button 1">
             <sub-events>
                 <event-block sid="170290726173092">
                     <conditions>
@@ -163,7 +163,7 @@
                             <param id="1" name="Value">Buttons.Cost</param>
                         </action>
                         <action id="-11" name="Add to" sid="691133298427958" type="Slimebud">
-                            <param id="0" name="Instance variable">PGGValue</param>
+                            <param id="0" name="Instance variable">PGGBase</param>
                             <param id="1" name="Value">0.1</param>
                         </action>
                         <action id="-11" name="Add to" sid="429483369396218" type="Buttons">
@@ -173,6 +173,60 @@
                         <action id="-10" name="Set value" sid="744522063355957" type="Buttons">
                             <param id="0" name="Instance variable">Cost</param>
                             <param id="1" name="Value">Buttons.ErosionLevel*Buttons.ErosionLevel*Buttons.ErosionLevel+10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Script relatif au fonctionnement du bouton 2" sid="885397075387506" title="Button 2">
+            <sub-events>
+                <event-block sid="958843159743459">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="542401233053691" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="741013930746547" type="Buttons2">
+                            <param id="0" name="Instance variable">Cost</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="0" name="Set text" sid="215276557371332" type="TButton2_Cost">
+                            <param id="0" name="Text">Buttons2.Cost</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="586865800910073">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="335942814017568" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Buttons2</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="357991214920485" type="System">
+                            <param id="0" name="First value">Slimebud.RedSlime</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">Buttons2.Cost</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="882602365291932" type="Slimebud">
+                            <param id="0" name="Instance variable">RedSlime</param>
+                            <param id="1" name="Value">Buttons2.Cost</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="188143197385923" type="Slimebud">
+                            <param id="0" name="Instance variable">PGGMultiplicator</param>
+                            <param id="1" name="Value">0.95</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="164480007909389" type="Slimebud">
+                            <param id="0" name="Instance variable">CGGMultiplicator</param>
+                            <param id="1" name="Value">0.95</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="566271395796407" type="Slimebud">
+                            <param id="0" name="Instance variable">PRGMultiplicator</param>
+                            <param id="1" name="Value">1.10</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="358718983209734" type="Slimebud">
+                            <param id="0" name="Instance variable">CRGMultiplicator</param>
+                            <param id="1" name="Value">1.10</param>
                         </action>
                     </actions>
                 </event-block>
