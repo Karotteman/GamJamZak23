@@ -21,6 +21,7 @@
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
     </used-behaviors>
     <used-effects />
@@ -218,6 +219,9 @@
             <behaviors>
                 <behavior-type name="Physics" sid="355028013902186">
                     <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="418853015359347">
+                    <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
         </object-type>
