@@ -68,8 +68,15 @@
                 <action id="-3" name="Create object" sid="582341136509045" type="System">
                     <param id="0" name="Object to create">GGGain</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">620</param>
+                    <param id="2" name="X">620+random(-100,100)</param>
                     <param id="3" name="Y">500</param>
+                </action>
+                <action id="0" name="Set text" sid="295137927104203" type="GGGain">
+                    <param id="0" name="Text">&quot;+&quot;&amp;Slimebud.CGGValue</param>
+                </action>
+                <action behavior="Physics" id="15" name="Set velocity" sid="649748114948568" type="GGGain">
+                    <param id="0" name="X component">0</param>
+                    <param id="1" name="Y component">-100</param>
                 </action>
             </actions>
         </event-block>

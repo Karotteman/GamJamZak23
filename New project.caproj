@@ -215,6 +215,11 @@
         </object-type>
         <object-type name="GGGain" sid="764365352605672">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Physics" sid="355028013902186">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="Sprite" sid="772623301928296">
             <plugin id="Sprite" />
