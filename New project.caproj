@@ -14,13 +14,15 @@
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -45,10 +47,6 @@
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="TiledBackground" sid="3206956448522659">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
         <object-type name="WebStorage" sid="1510269620771624">
             <plugin id="WebStorage" />
         </object-type>
@@ -67,7 +65,7 @@
         <object-type name="Browser" sid="3498868852026895">
             <plugin id="Browser" />
         </object-type>
-        <object-type name="Text" sid="2985603725420557">
+        <object-type name="TotalGS_Value" sid="2985603725420557">
             <plugin id="Text" />
         </object-type>
         <object-type name="BackgroundCave" sid="141344530122080">
@@ -78,72 +76,361 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="321576689533446">
+        <object-type global="1" name="Slimebud" sid="321576689533446">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Scale modificator of goutte" name="GScaleMod" sid="928138505333816" type="number" />
+                <instance-variable comment="Number of green slime available" name="GreenSlime" sid="198999905167594" type="number" />
+                <instance-variable comment="The clickable green goutte value" name="CGGValue" sid="972129410504666" type="number" />
+                <instance-variable comment="The passive green goutte value" name="PGGValue" sid="131042942101186" type="number" />
+            </instance-variables>
             <animation-folder>
-                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="580325058367682" speed="2">
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="580325058367682" speed="2">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Karotteman\Downloads\LE_Slime.png">
                         <collision-poly>
-                            <point x="0.25" y="0.25" />
-                            <point x="0.5" y="0.1875" />
-                            <point x="0.71875" y="0.28125" />
+                            <point x="0.291016" y="0.185547" />
+                            <point x="0.658203" y="0.191406" />
+                            <point x="0.779297" y="0.316406" />
                             <point x="0.78125" y="0.5" />
-                            <point x="0.71875" y="0.71875" />
+                            <point x="0.783203" y="0.810547" />
                             <point x="0.5" y="0.8125" />
-                            <point x="0.21875" y="0.78125" />
-                            <point x="0.15625" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Karotteman\Downloads\LE_Slime.png">
-                        <collision-poly>
-                            <point x="0.25" y="0.25" />
-                            <point x="0.5" y="0.1875" />
-                            <point x="0.71875" y="0.28125" />
-                            <point x="0.78125" y="0.5" />
-                            <point x="0.71875" y="0.71875" />
-                            <point x="0.5" y="0.8125" />
-                            <point x="0.21875" y="0.78125" />
-                            <point x="0.15625" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Karotteman\Downloads\LE_Slime.png">
-                        <collision-poly>
-                            <point x="0.25" y="0.25" />
-                            <point x="0.5" y="0.1875" />
-                            <point x="0.71875" y="0.28125" />
-                            <point x="0.78125" y="0.5" />
-                            <point x="0.71875" y="0.71875" />
-                            <point x="0.5" y="0.8125" />
-                            <point x="0.21875" y="0.78125" />
-                            <point x="0.15625" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Karotteman\Downloads\LE_Slime.png">
-                        <collision-poly>
-                            <point x="0.25" y="0.25" />
-                            <point x="0.5" y="0.1875" />
-                            <point x="0.71875" y="0.28125" />
-                            <point x="0.78125" y="0.5" />
-                            <point x="0.71875" y="0.71875" />
-                            <point x="0.5" y="0.8125" />
-                            <point x="0.21875" y="0.78125" />
-                            <point x="0.15625" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Karotteman\Downloads\LE_Slime.png">
-                        <collision-poly>
-                            <point x="0.25" y="0.25" />
-                            <point x="0.5" y="0.1875" />
-                            <point x="0.71875" y="0.28125" />
-                            <point x="0.78125" y="0.5" />
-                            <point x="0.71875" y="0.71875" />
-                            <point x="0.5" y="0.8125" />
-                            <point x="0.21875" y="0.78125" />
-                            <point x="0.15625" y="0.5" />
+                            <point x="0.15625" y="0.814453" />
+                            <point x="0.158203" y="0.353516" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Tank" sid="490934100167567">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944871679951215" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CGreenGoutte" sid="744786152828344">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="187987749644272">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="967789707813828" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Jump\png\Slime_Jump12.png">
+                        <collision-poly>
+                            <point x="0.421875" y="0.658537" />
+                            <point x="0.518555" y="0.466463" />
+                            <point x="0.595703" y="0.637195" />
+                            <point x="0.592773" y="0.795732" />
+                            <point x="0.5" y="0.853659" />
+                            <point x="0.439453" y="0.803353" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="9" loop="0" name="explode" pingpong="0" repeatcount="1" repeatto="0" sid="442318850026345" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Jump\png\Slime_Jump14.png">
+                        <collision-poly>
+                            <point x="0.589844" y="0.0548778" />
+                            <point x="0.589844" y="0" />
+                            <point x="0.556641" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Jump\png\Slime_Jump15.png">
+                        <collision-poly>
+                            <point x="0.599609" y="0" />
+                            <point x="0.568359" y="0.0487805" />
+                            <point x="0.505859" y="0.00609759" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Death\png\Slime_Death5.png">
+                        <collision-poly>
+                            <point x="0.535156" y="0" />
+                            <point x="0.576172" y="0.0701219" />
+                            <point x="0.605469" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Death\png\Slime_Death6.png">
+                        <collision-poly>
+                            <point x="0.564453" y="0.10061" />
+                            <point x="0.451172" y="0" />
+                            <point x="0.619141" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Death\png\Slime_Death7.png">
+                        <collision-poly>
+                            <point x="0.582031" y="0.0548781" />
+                            <point x="0.439453" y="0" />
+                            <point x="0.642578" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Death\png\Slime_Death8.png">
+                        <collision-poly>
+                            <point x="0.488281" y="0" />
+                            <point x="0.685547" y="0" />
+                            <point x="0.572266" y="0.073171" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Death\png\Slime_Death9.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.328125" y="0.176829" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Death\png\Slime_Death10.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.460938" y="0.109756" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Death\png\Slime_Death11.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.429688" y="0.109756" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TotalGS_Icon" sid="892384711051929">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785204424017103" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Normal\Jump\png\Slime_Jump8.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.0625" />
+                            <point x="0.875" y="0.6875" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.4375" y="0.9375" />
+                            <point x="0.125" y="0.3125" />
+                            <point x="0.125" y="0.6875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GGGain" sid="764365352605672">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="772623301928296">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="998503386530956" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="UiBackground" sid="303880156095796">
+            <plugin id="NinePatch" />
+            <texture original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\panel_brown.png" />
+        </object-type>
+        <object-type name="CurrencyBackground" sid="473777352475041">
+            <plugin id="NinePatch" />
+            <texture original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\panel_beige.png" />
+        </object-type>
+        <object-type name="TankTab_Text" sid="144177184362623">
+            <plugin id="Text" />
+            <container>
+                <type>TankTab_Text</type>
+                <type>TankTab</type>
+            </container>
+        </object-type>
+        <object-type name="BudTab_Text" sid="759563890352447">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TankTab" sid="455901785763221">
+            <plugin id="Sprite" />
+            <container>
+                <type>TankTab_Text</type>
+                <type>TankTab</type>
+            </container>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635349626417173" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\Users\Karotteman\Downloads\buttonLong_blue_Dark.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BudTab" sid="736479683674977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="229541005849193" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Hover" pingpong="0" repeatcount="1" repeatto="0" sid="720123670929269" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\Users\Karotteman\Downloads\buttonLong_blue_Dark.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Selected" pingpong="0" repeatcount="1" repeatto="0" sid="430603384560150" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonBackground" sid="200133102683901">
+            <plugin id="NinePatch" />
+            <texture original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonSquare_brown.png" />
+        </object-type>
+        <object-type name="Buttons" sid="905307427984681">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Cost" sid="900007966578787" type="number" />
+            </instance-variables>
+            <container>
+                <type>Buttons</type>
+                <type>TButton1_Name</type>
+                <type>TButton1_Description</type>
+                <type>TButton1_Cost</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="388762570391158" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Buttons2" sid="868743822361412">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="207035858685381" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Buttons3" sid="103367125190420">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929030234322755" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
+                        <collision-poly>
+                            <point x="0.00526315" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526315" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Buttons4" sid="131838878341583">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869876049395218" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TButton1_Name" sid="332970662033479">
+            <plugin id="Text" />
+            <container>
+                <type>Buttons</type>
+                <type>TButton1_Name</type>
+                <type>TButton1_Description</type>
+                <type>TButton1_Cost</type>
+            </container>
+        </object-type>
+        <object-type name="TButton1_Description" sid="211487444910958">
+            <plugin id="Text" />
+            <container>
+                <type>Buttons</type>
+                <type>TButton1_Name</type>
+                <type>TButton1_Description</type>
+                <type>TButton1_Cost</type>
+            </container>
+        </object-type>
+        <object-type name="TButton1_Cost" sid="820507324691358">
+            <plugin id="Text" />
+            <container>
+                <type>Buttons</type>
+                <type>TButton1_Name</type>
+                <type>TButton1_Description</type>
+                <type>TButton1_Cost</type>
+            </container>
         </object-type>
     </object-folder>
     <families />
@@ -151,7 +438,8 @@
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Global Event sheet.xml</event-sheet>
+        <event-sheet>Button Event sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="1" />
@@ -189,5 +477,6 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="Retro Gaming.ttf" />
     </files-folder>
 </c2project>

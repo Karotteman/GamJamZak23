@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Button Event sheet</name>
+    <events>
+        <comment>Tabs Behavior</comment>
+        <event-group description="" sid="774194011949733" title="Tank Tab">
+            <sub-events>
+                <event-block sid="516587644694790">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="798916280100542" type="Mouse">
+                            <param id="0" name="Object">TankTab</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="416843619412659" type="TankTab">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="809655291121805" type="TankTab">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="524942720754708">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="725310460731303" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">TankTab</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="195415086615875" type="TankTab">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="425149419488102" type="BudTab">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="960274732360215" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="182244997375173" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="724332347384710">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="311663648867610" type="Mouse">
+                            <param id="0" name="Object">TankTab</param>
+                        </condition>
+                        <condition id="3" inverted="1" name="Compare frame" sid="758292476856378" type="TankTab">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="531858366307532" type="TankTab">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="176168913731856" title="Bud Tab">
+            <sub-events>
+                <event-block sid="122264494978092">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="768249287344261" type="Mouse">
+                            <param id="0" name="Object">BudTab</param>
+                        </condition>
+                        <condition id="2" inverted="1" name="Is playing" sid="653200230254448" type="BudTab">
+                            <param id="0" name="Animation">&quot;selected&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="120635096745496" type="BudTab">
+                            <param id="0" name="Animation">&quot;hover&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="168731177128009">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="695914638715112" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">BudTab</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="667193040690774" type="BudTab">
+                            <param id="0" name="Animation">&quot;selected&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="436424676931792" type="TankTab">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="963257422663211" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="837721291145591" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="175772567101390">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="368370721361815" type="Mouse">
+                            <param id="0" name="Object">BudTab</param>
+                        </condition>
+                        <condition id="2" inverted="1" name="Is playing" sid="407568951975349" type="BudTab">
+                            <param id="0" name="Animation">&quot;selected&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="858062245871476" type="BudTab">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

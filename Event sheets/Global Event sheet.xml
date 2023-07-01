@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Global Event sheet</name>
+    <events>
+        <include>Button Event sheet</include>
+        <comment>When game begin</comment>
+        <event-block sid="156768545052311">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="669582610897827" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="733223135984767">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="281773963554511" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Tank</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="206705600021175" type="System">
+                    <param id="0" name="Object to create">CGreenGoutte</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">640</param>
+                    <param id="3" name="Y">230</param>
+                </action>
+                <action id="9" name="Set scale" sid="486176302197564" type="CGreenGoutte">
+                    <param id="0" name="Scale">Slimebud.GScaleMod</param>
+                </action>
+                <action id="-10" name="Set value" sid="162682037114436" type="Slimebud">
+                    <param id="0" name="Instance variable">GScaleMod</param>
+                    <param id="1" name="Value">Slimebud.GScaleMod + 0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="766437486993740">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="444519167378098" type="CGreenGoutte">
+                    <param id="0" name="Object">Slimebud</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="384684768866409" type="CGreenGoutte">
+                    <param id="0" name="Animation">&quot;explode&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="775498144074820" type="CGreenGoutte">
+                    <param id="0" name="Object">CGreenGoutte</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="226846176332525" type="CGreenGoutte">
+                    <param id="0" name="Object">Slimebud</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="15" name="Set velocity" sid="506933743512284" type="CGreenGoutte">
+                    <param id="0" name="X component">0</param>
+                    <param id="1" name="Y component">0</param>
+                </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="263891938883325" type="CGreenGoutte">
+                    <param id="0" name="Setting">1</param>
+                </action>
+                <action id="-11" name="Add to" sid="483226459693994" type="Slimebud">
+                    <param id="0" name="Instance variable">GreenSlime</param>
+                    <param id="1" name="Value">Slimebud.CGGValue</param>
+                </action>
+                <action id="-3" name="Create object" sid="582341136509045" type="System">
+                    <param id="0" name="Object to create">GGGain</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">620</param>
+                    <param id="3" name="Y">500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="922033727150254">
+            <conditions>
+                <condition id="4" name="On finished" sid="400000864308424" type="CGreenGoutte">
+                    <param id="0" name="Animation">&quot;explode&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="190370233628614" type="CGreenGoutte" />
+            </actions>
+        </event-block>
+        <event-block sid="225120274867862">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="921670611358278" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="315589372487484" type="TotalGS_Value">
+                    <param id="0" name="Text">Slimebud.GreenSlime</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
