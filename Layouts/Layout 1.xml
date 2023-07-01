@@ -137,10 +137,11 @@
                         <RedSlime>0</RedSlime>
                         <RScaleMod>1</RScaleMod>
                         <RGDropRate>0</RGDropRate>
-                        <CRGValue>0</CRGValue>
-                        <PRGValue>0</PRGValue>
+                        <CRGValue>1</CRGValue>
+                        <PRGValue>0.1</PRGValue>
                         <SlimeLeftOver>0</SlimeLeftOver>
-                        <GreenLoseOnRed>1</GreenLoseOnRed>
+                        <GreenLoseOnRed>0.01</GreenLoseOnRed>
+                        <NBGperSecond>0</NBGperSecond>
                         <CGGMultiplicator>1</CGGMultiplicator>
                         <PGGMultiplicator>1</PGGMultiplicator>
                         <PRGMultiplicator>1</PRGMultiplicator>
@@ -867,8 +868,8 @@
                         <behavior-instance type="Physics">
                             <properties>
                                 <immovable>No</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
-                                <prevent-rotation>No</prevent-rotation>
+                                <collision-mask>Circle</collision-mask>
+                                <prevent-rotation>Yes</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
                                 <elasticity>0.2</elasticity>
@@ -942,7 +943,7 @@
             <effects />
         </layer>
         <layer name="BuddyButtons" sid="564462272788854">
-            <initially-visible>1</initially-visible>
+            <initially-visible>0</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
@@ -987,7 +988,7 @@
             <effects />
         </layer>
         <layer name="MetaButtons" sid="210869617573016">
-            <initially-visible>1</initially-visible>
+            <initially-visible>0</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>

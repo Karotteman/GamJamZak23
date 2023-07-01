@@ -91,6 +91,7 @@
                 <instance-variable comment="Value of Passive Red Goutte" name="PRGValue" sid="805836000827462" type="number" />
                 <instance-variable comment="Meta currency " name="SlimeLeftOver" sid="248954969393109" type="number" />
                 <instance-variable comment="Green Slime value perte quand rouge tombe" name="GreenLoseOnRed" sid="806649040743573" type="number" />
+                <instance-variable name="NBGperSecond" sid="969522224347343" type="number" />
                 <instance-variable comment="Multiplicateur pour la valeur des gouttes cliquées" name="CGGMultiplicator" sid="966264628597808" type="number" />
                 <instance-variable comment="Multiplicateur pour la valeur du slime passif" name="PGGMultiplicator" sid="197252449457521" type="number" />
                 <instance-variable comment="Multiplicator to the value of Passive Red Goutte" name="PRGMultiplicator" sid="110744120776345" type="number" />
