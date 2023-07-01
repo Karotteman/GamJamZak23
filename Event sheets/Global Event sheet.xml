@@ -76,7 +76,15 @@
                 </action>
                 <action behavior="Physics" id="15" name="Set velocity" sid="649748114948568" type="GGGain">
                     <param id="0" name="X component">0</param>
-                    <param id="1" name="Y component">-100</param>
+                    <param id="1" name="Y component">-400</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="800421141548251" type="GGGain">
+                    <param id="0" name="Object">CGreenGoutte</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="322365111831701" type="GGGain">
+                    <param id="0" name="Object">GGGain</param>
+                    <param id="1" name="State">0</param>
                 </action>
             </actions>
         </event-block>
