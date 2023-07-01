@@ -803,7 +803,7 @@
             <effects />
         </layer>
         <layer name="BuddyButtons" sid="564462272788854">
-            <initially-visible>1</initially-visible>
+            <initially-visible>0</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
@@ -848,7 +848,7 @@
             <effects />
         </layer>
         <layer name="MetaButtons" sid="210869617573016">
-            <initially-visible>1</initially-visible>
+            <initially-visible>0</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
