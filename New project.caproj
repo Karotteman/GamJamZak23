@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
@@ -804,6 +805,9 @@
         <object-type name="BButton11_Cost" sid="739901232957075">
             <plugin id="Text" />
         </object-type>
+        <object-type name="FormatNumber" sid="861447378830603">
+            <plugin id="Function" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -837,6 +841,7 @@
             </properties>
         </global-instance>
         <global-instance type="Browser" uid="38" />
+        <global-instance type="FormatNumber" uid="47" />
     </global-instances>
     <sounds-folder />
     <music-folder>

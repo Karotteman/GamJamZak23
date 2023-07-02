@@ -130,7 +130,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <GreenSlime>5000000000000</GreenSlime>
+                        <GreenSlime>50000000</GreenSlime>
                         <GScaleMod>1</GScaleMod>
                         <CGGValue>0</CGGValue>
                         <PGGValue>0.1</PGGValue>
@@ -266,7 +266,7 @@
                         <x>1100</x>
                         <y>750</y>
                         <z>0</z>
-                        <width>107</width>
+                        <width>160</width>
                         <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -318,8 +318,8 @@
                         <x>1426</x>
                         <y>463</y>
                         <z>0</z>
-                        <width>99</width>
-                        <height>43</height>
+                        <width>200</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
@@ -669,7 +669,7 @@
                         <x>1100</x>
                         <y>840</y>
                         <z>0</z>
-                        <width>152</width>
+                        <width>160</width>
                         <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -696,7 +696,7 @@
                         <x>1100</x>
                         <y>790</y>
                         <z>0</z>
-                        <width>122</width>
+                        <width>160</width>
                         <height>54</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -723,7 +723,7 @@
                         <x>1100</x>
                         <y>880</y>
                         <z>0</z>
-                        <width>122</width>
+                        <width>160</width>
                         <height>54</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
