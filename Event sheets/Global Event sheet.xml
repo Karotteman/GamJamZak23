@@ -60,6 +60,9 @@
                 <action id="0" name="Set text" sid="635192551465722" type="TButton2_Cost">
                     <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Buttons2.Cost)</param>
                 </action>
+                <action id="0" name="Set text" sid="363065228851730" type="TButton1Level">
+                    <param id="0" name="Text">Buttons.ErosionLevel</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="747849341765254">
@@ -163,6 +166,16 @@
                             </conditions>
                             <actions>
                                 <action id="-15" name="Set visible" sid="702788930923629" type="RS_Cost_Icon">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="383861804119146">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Is visible" sid="168274683970791" type="Sprite3" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="508324701992652" type="Sprite3">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>

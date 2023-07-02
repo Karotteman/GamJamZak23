@@ -130,7 +130,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <GreenSlime>10</GreenSlime>
+                        <GreenSlime>1000000</GreenSlime>
                         <GScaleMod>1</GScaleMod>
                         <CGGValue>0</CGGValue>
                         <PGGValue>0.1</PGGValue>
@@ -264,9 +264,9 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1100</x>
-                        <y>750</y>
+                        <y>752</y>
                         <z>0</z>
-                        <width>160</width>
+                        <width>162</width>
                         <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -669,7 +669,7 @@
                         <x>1100</x>
                         <y>840</y>
                         <z>0</z>
-                        <width>160</width>
+                        <width>162</width>
                         <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -696,7 +696,7 @@
                         <x>1100</x>
                         <y>790</y>
                         <z>0</z>
-                        <width>160</width>
+                        <width>164</width>
                         <height>54</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -723,7 +723,7 @@
                         <x>1100</x>
                         <y>880</y>
                         <z>0</z>
-                        <width>160</width>
+                        <width>162</width>
                         <height>54</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -935,6 +935,33 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TButton1Level" uid="47">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-13,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Right</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>356</x>
+                        <y>838</y>
+                        <z>0</z>
+                        <width>153</width>
+                        <height>26</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
