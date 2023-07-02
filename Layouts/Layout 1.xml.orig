@@ -130,30 +130,26 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <GreenSlime>0</GreenSlime>
+                        <GreenSlime>1000000</GreenSlime>
                         <GScaleMod>1</GScaleMod>
-                        <CGGValue>1</CGGValue>
+                        <CGGValue>0</CGGValue>
                         <PGGValue>0.1</PGGValue>
-                        <RedSlime>0</RedSlime>
+                        <RedSlime>10</RedSlime>
                         <RScaleMod>1</RScaleMod>
-                        <RGDropRate>0</RGDropRate>
+                        <RGDropRate>50</RGDropRate>
                         <CRGValue>1</CRGValue>
-                        <PRGValue>0.1</PRGValue>
+                        <PRGValue>0</PRGValue>
                         <SlimeLeftOver>0</SlimeLeftOver>
-<<<<<<< HEAD
-                        <GreenLoseOnRed>1</GreenLoseOnRed>
+                        <GreenLoseOnRed>0.01</GreenLoseOnRed>
+                        <NBGperSecond>1</NBGperSecond>
                         <CGGMultiplicator>1</CGGMultiplicator>
                         <PGGMultiplicator>1</PGGMultiplicator>
                         <PRGMultiplicator>1</PRGMultiplicator>
                         <CRGMultiplicator>1</CRGMultiplicator>
                         <PGGBase>0</PGGBase>
-                        <CGGBase>0</CGGBase>
-                        <PRGBase>0</PRGBase>
+                        <CGGBase>10</CGGBase>
+                        <PRGBase>1</PRGBase>
                         <CRGBase>0</CRGBase>
-=======
-                        <GreenLoseOnRed>0.01</GreenLoseOnRed>
-                        <NBGperSecond>0</NBGperSecond>
->>>>>>> 3212a7fab5db4529d66803413ec50a10e7618481
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -268,9 +264,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1100</x>
-                        <y>750</y>
+                        <y>752</y>
                         <z>0</z>
-                        <width>107</width>
+<<<<<<< HEAD
+                        <width>162</width>
+=======
+                        <width>160</width>
+>>>>>>> e33f96f5c9f745327ba5dd8e343a3acaea3baa22
                         <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -322,8 +322,8 @@
                         <x>1426</x>
                         <y>463</y>
                         <z>0</z>
-                        <width>99</width>
-                        <height>43</height>
+                        <width>200</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
@@ -635,7 +635,7 @@
                 </instance>
                 <instance type="TotalRS_Icon" uid="28">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -658,7 +658,7 @@
                 <instance type="TotalRS_Value" uid="29">
                     <properties>
                         <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Retro Gaming,-32,700,0</font>
                         <color>255,51,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -673,7 +673,11 @@
                         <x>1100</x>
                         <y>840</y>
                         <z>0</z>
-                        <width>152</width>
+<<<<<<< HEAD
+                        <width>162</width>
+=======
+                        <width>160</width>
+>>>>>>> e33f96f5c9f745327ba5dd8e343a3acaea3baa22
                         <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -700,7 +704,11 @@
                         <x>1100</x>
                         <y>790</y>
                         <z>0</z>
-                        <width>122</width>
+<<<<<<< HEAD
+                        <width>164</width>
+=======
+                        <width>160</width>
+>>>>>>> e33f96f5c9f745327ba5dd8e343a3acaea3baa22
                         <height>54</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -712,7 +720,7 @@
                 <instance type="RSpC_Value" uid="31">
                     <properties>
                         <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Retro Gaming,-32,700,0</font>
                         <color>255,51,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -727,7 +735,11 @@
                         <x>1100</x>
                         <y>880</y>
                         <z>0</z>
-                        <width>122</width>
+<<<<<<< HEAD
+                        <width>162</width>
+=======
+                        <width>160</width>
+>>>>>>> e33f96f5c9f745327ba5dd8e343a3acaea3baa22
                         <height>54</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -760,7 +772,7 @@
                 </instance>
                 <instance type="Sprite3" uid="33">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -783,7 +795,7 @@
                 <instance type="TButton2_Name" uid="34">
                     <properties>
                         <text>INOFFENSIVE</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Retro Gaming,-23,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -810,7 +822,7 @@
                 <instance type="TButton2_Cost" uid="35">
                     <properties>
                         <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Retro Gaming,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Right</horizontal-alignment>
@@ -837,7 +849,7 @@
                 <instance type="TButton2_Description" uid="36">
                     <properties>
                         <text>Increases value of red goo drops to 110%. Reduces value of slime drops to 95%.</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Retro Gaming,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -899,28 +911,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TotalRS_Icon" uid="38">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1012</x>
-                        <y>782</y>
-                        <z>0</z>
-                        <width>19.183326721</width>
-                        <height>19.183326721</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="TotalGS_Icon" uid="39">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -939,6 +929,55 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="RS_Cost_Icon" uid="40">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1010</x>
+                        <y>782</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TButton1Level" uid="47">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-13,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Right</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>356</x>
+                        <y>838</y>
+                        <z>0</z>
+                        <width>153</width>
+                        <height>26</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -985,6 +1024,180 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Button11" uid="1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Cost>10</Cost>
+                        <Level>0</Level>
+                        <MaxLevel>10</MaxLevel>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>20</x>
+                        <y>760</y>
+                        <z>0</z>
+                        <width>500</width>
+                        <height>115</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Button12" uid="41">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1022</x>
+                        <y>760</y>
+                        <z>0</z>
+                        <width>500</width>
+                        <height>115</height>
+                        <depth>0</depth>
+                        <hotspotX>1</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Button13" uid="42">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>20</x>
+                        <y>1000</y>
+                        <z>0</z>
+                        <width>500</width>
+                        <height>115</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>1.020408154</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Button14" uid="43">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1022</x>
+                        <y>1000</y>
+                        <z>0</z>
+                        <width>500</width>
+                        <height>115</height>
+                        <depth>0</depth>
+                        <hotspotX>1</hotspotX>
+                        <hotspotY>1.020408154</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BButton11_Name" uid="44">
+                    <properties>
+                        <text>JUMP!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-22.4,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>134</x>
+                        <y>772</y>
+                        <z>0</z>
+                        <width>271</width>
+                        <height>29</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BButton11_Description" uid="45">
+                    <properties>
+                        <text>+1 Slime/click</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>136</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>373</width>
+                        <height>77</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BButton11_Cost" uid="46">
+                    <properties>
+                        <text>Button11.Cost</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Right</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>304</x>
+                        <y>773</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>

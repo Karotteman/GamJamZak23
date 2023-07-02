@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
@@ -91,7 +92,7 @@
                 <instance-variable comment="Value of Passive Red Goutte" name="PRGValue" sid="805836000827462" type="number" />
                 <instance-variable comment="Meta currency " name="SlimeLeftOver" sid="248954969393109" type="number" />
                 <instance-variable comment="Green Slime value perte quand rouge tombe" name="GreenLoseOnRed" sid="806649040743573" type="number" />
-<<<<<<< HEAD
+                <instance-variable name="NBGperSecond" sid="969522224347343" type="number" />
                 <instance-variable comment="Multiplicateur pour la valeur des gouttes cliquées" name="CGGMultiplicator" sid="966264628597808" type="number" />
                 <instance-variable comment="Multiplicateur pour la valeur du slime passif" name="PGGMultiplicator" sid="197252449457521" type="number" />
                 <instance-variable comment="Multiplicator to the value of Passive Red Goutte" name="PRGMultiplicator" sid="110744120776345" type="number" />
@@ -100,9 +101,6 @@
                 <instance-variable comment="Rendement de la CGG" name="CGGBase" sid="197551203608739" type="number" />
                 <instance-variable comment="Rendement de la PRG" name="PRGBase" sid="399240952801789" type="number" />
                 <instance-variable comment="Rendement de la CRG" name="CRGBase" sid="751491190679132" type="number" />
-=======
-                <instance-variable name="NBGperSecond" sid="969522224347343" type="number" />
->>>>>>> 3212a7fab5db4529d66803413ec50a10e7618481
             </instance-variables>
             <animation-folder>
                 <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="580325058367682" speed="3">
@@ -668,6 +666,153 @@
                 <type>TButton2_Name</type>
             </container>
         </object-type>
+        <object-type name="Button11" sid="988328239874279">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Cost" sid="165959921347751" type="number" />
+                <instance-variable name="Level" sid="960489464621988" type="number" />
+                <instance-variable name="MaxLevel" sid="767987696430195" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529865222588892" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
+                        <collision-poly>
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526297" y="0.979592" />
+                            <point x="0.00526297" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="-0.0888889" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey_pressed.png">
+                        <collision-poly>
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526315" y="0.977778" />
+                            <point x="0.00526315" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button12" sid="105356498117080">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="243608141925377" speed="0">
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="-0.0888889" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button13" sid="956918716263247">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129227572870014" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
+                        <collision-poly>
+                            <point x="0.00526315" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526315" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1.02222" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button14" sid="617765080762016">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706205820637014" speed="0">
+                    <frame duration="1" hotspotX="1" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
+                        <collision-poly>
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526297" y="0.979592" />
+                            <point x="0.00526297" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1.02222" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey_pressed.png">
+                        <collision-poly>
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526315" y="0.977778" />
+                            <point x="0.00526315" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RS_Cost_Icon" sid="705678711896134">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924972162625266" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Karotteman\Downloads\SlimeAnimations\Red\Jump\png\SlimeRed_Jump10.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0.71875" />
+                            <point x="0.1875" y="1" />
+                            <point x="0" y="0.238281" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BButton11_Name" sid="510353391552809">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BButton11_Description" sid="378008272230858">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BButton11_Cost" sid="739901232957075">
+            <plugin id="Text" />
+        </object-type>
+<<<<<<< HEAD
+        <object-type name="TButton1Level" sid="723354010782247">
+            <plugin id="Text" />
+=======
+        <object-type name="FormatNumber" sid="861447378830603">
+            <plugin id="Function" />
+>>>>>>> e33f96f5c9f745327ba5dd8e343a3acaea3baa22
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -678,15 +823,15 @@
         <event-sheet>Button Event sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="WebStorage" uid="1" />
-        <global-instance type="Keyboard" uid="3" />
-        <global-instance type="Mouse" uid="4" />
-        <global-instance type="Touch" uid="5">
+        <global-instance type="WebStorage" uid="3" />
+        <global-instance type="Keyboard" uid="4" />
+        <global-instance type="Mouse" uid="5" />
+        <global-instance type="Touch" uid="6">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="6">
+        <global-instance type="Audio" uid="7">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -700,10 +845,14 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Browser" uid="7" />
+        <global-instance type="Browser" uid="38" />
+        <global-instance type="FormatNumber" uid="47" />
     </global-instances>
     <sounds-folder />
-    <music-folder />
+    <music-folder>
+        <file name="FutureBeatsPops.m4a" />
+        <file name="FutureBeatsPops.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
