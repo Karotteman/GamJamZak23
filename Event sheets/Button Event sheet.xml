@@ -1446,7 +1446,7 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="990869262827412" type="Button11">
                                                     <param id="0" name="Instance variable">Cost</param>
-                                                    <param id="1" name="Value">35000</param>
+                                                    <param id="1" name="Value">13000</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="799854681953536" type="BButton11_Cost">
                                                     <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Button11.Cost)</param>
@@ -1483,7 +1483,7 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="789791918972960" type="Button11">
                                                     <param id="0" name="Instance variable">Cost</param>
-                                                    <param id="1" name="Value">50000</param>
+                                                    <param id="1" name="Value">15000</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="100488136458825" type="BButton11_Cost">
                                                     <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Button11.Cost)</param>
@@ -1520,7 +1520,7 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="199008025742323" type="Button11">
                                                     <param id="0" name="Instance variable">Cost</param>
-                                                    <param id="1" name="Value">750000</param>
+                                                    <param id="1" name="Value">20000</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="146117452223715" type="BButton11_Cost">
                                                     <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Button11.Cost)</param>
@@ -1557,7 +1557,7 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="677032707285330" type="Button11">
                                                     <param id="0" name="Instance variable">Cost</param>
-                                                    <param id="1" name="Value">100000</param>
+                                                    <param id="1" name="Value">40000</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="848368528608843" type="BButton11_Cost">
                                                     <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Button11.Cost)</param>
@@ -1571,6 +1571,43 @@
                                                 </action>
                                                 <action id="0" name="Set text" sid="307311929454247" type="BButton11_Description">
                                                     <param id="0" name="Text">&quot;x10 slime/click&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="743650631261791">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="469315401332673" type="System" />
+                                                <condition id="-8" name="Compare two values" sid="980055056802273" type="System">
+                                                    <param id="0" name="First value">Button11.Level</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">9</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="222474287303963" type="Slimebud">
+                                                    <param id="0" name="Instance variable">CGGMultiplicator</param>
+                                                    <param id="1" name="Value">Slimebud.CGGMultiplicator*10</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="840448810472493" type="Slimebud">
+                                                    <param id="0" name="Instance variable">CRGMultiplicator</param>
+                                                    <param id="1" name="Value">Slimebud.CRGMultiplicator*10</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="793822432208322" type="Button11">
+                                                    <param id="0" name="Instance variable">Cost</param>
+                                                    <param id="1" name="Value">40000</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="933462245393774" type="BButton11_Cost">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                                <action id="-11" name="Add to" sid="183451880588734" type="Button11">
+                                                    <param id="0" name="Instance variable">Level</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="232552316261062" type="BButton11_Name">
+                                                    <param id="0" name="Text">&quot;GOT IT ALL!&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="381765834484663" type="BButton11_Description">
+                                                    <param id="0" name="Text">&quot;You&apos;ve absorbed a lot of slime.&quot;</param>
                                                 </action>
                                             </actions>
                                         </event-block>
