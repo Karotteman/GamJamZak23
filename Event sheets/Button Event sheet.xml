@@ -1689,10 +1689,6 @@
                                                     <param id="0" name="Instance variable">CRGMultiplicator</param>
                                                     <param id="1" name="Value">Slimebud.CRGMultiplicator*10</param>
                                                 </action>
-                                                <action id="-10" name="Set value" sid="793822432208322" type="Button11">
-                                                    <param id="0" name="Instance variable">Cost</param>
-                                                    <param id="1" name="Value">40000</param>
-                                                </action>
                                                 <action id="-15" name="Set visible" sid="933462245393774" type="BButton11_Cost">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
