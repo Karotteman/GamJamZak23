@@ -42,23 +42,23 @@
                     <param id="0" name="Instance variable">CGGValue</param>
                     <param id="1" name="Value">Slimebud.CGGBase*Slimebud.CGGMultiplicator</param>
                 </action>
-                <action id="0" name="Set text" sid="315589372487484" type="TotalGS_Value">
-                    <param id="0" name="Text">round(Slimebud.GreenSlime)</param>
+                <action id="0" name="Set text" sid="811643845583126" type="TotalGS_Value">
+                    <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Slimebud.GreenSlime)</param>
                 </action>
                 <action id="0" name="Set text" sid="436550979735950" type="TotalRS_Value">
-                    <param id="0" name="Text">round(Slimebud.RedSlime)</param>
+                    <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Slimebud.RedSlime)</param>
                 </action>
                 <action id="0" name="Set text" sid="253753279015334" type="GSpC_Value">
-                    <param id="0" name="Text">round(Slimebud.PGGValue)</param>
+                    <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Slimebud.PGGValue)</param>
                 </action>
                 <action id="0" name="Set text" sid="728993309324302" type="RSpC_Value">
-                    <param id="0" name="Text">round(Slimebud.PRGValue)</param>
+                    <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Slimebud.PRGValue)</param>
                 </action>
                 <action id="0" name="Set text" sid="235862692018000" type="TButton1_Cost">
-                    <param id="0" name="Text">Buttons.Cost</param>
+                    <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Buttons.Cost)</param>
                 </action>
                 <action id="0" name="Set text" sid="635192551465722" type="TButton2_Cost">
-                    <param id="0" name="Text">Buttons2.Cost</param>
+                    <param id="0" name="Text">FormatNumber.Call(&quot;Formatting&quot;, Buttons2.Cost)</param>
                 </action>
                 <action id="0" name="Set text" sid="363065228851730" type="TButton1Level">
                     <param id="0" name="Text">Buttons.ErosionLevel</param>
@@ -226,6 +226,10 @@
                         <action id="9" name="Set scale" sid="486176302197564" type="CGreenGoutte">
                             <param id="0" name="Scale">Slimebud.GScaleMod</param>
                         </action>
+                        <action id="0" name="Call function" sid="782691437772559" type="FormatNumber">
+                            <param id="0" name="Name">&quot;Formatting&quot;</param>
+                            <param id="1" name="Parameter {n}">Slimebud.GreenSlime</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -284,7 +288,7 @@
                                     <param id="3" name="Y">500</param>
                                 </action>
                                 <action id="0" name="Set text" sid="295137927104203" type="GGGain">
-                                    <param id="0" name="Text">&quot;+&quot;&amp;Slimebud.CGGValue</param>
+                                    <param id="0" name="Text">&quot;+&quot;&amp;FormatNumber.Call(&quot;Formatting&quot;, Slimebud.CGGValue)</param>
                                 </action>
                                 <action behavior="Physics" id="15" name="Set velocity" sid="649748114948568" type="GGGain">
                                     <param id="0" name="X component">0</param>
@@ -372,7 +376,7 @@
                             <param id="3" name="Y">500</param>
                         </action>
                         <action id="0" name="Set text" sid="983294777272530" type="GGGain">
-                            <param id="0" name="Text">&quot;-&quot;&amp;(Slimebud.GreenLoseOnRed*Slimebud.GreenSlime)</param>
+                            <param id="0" name="Text">&quot;-&quot;&amp;FormatNumber.Call(&quot;Formatting&quot;, Slimebud.GreenLoseOnRed*Slimebud.GreenSlime)</param>
                         </action>
                         <action id="4" name="Set font color" sid="181766580842497" type="GGGain">
                             <param id="0" name="Color">rgb(0, 153, 0)</param>
@@ -415,7 +419,7 @@
                                     <param id="3" name="Y">500</param>
                                 </action>
                                 <action id="0" name="Set text" sid="866873936570186" type="GGGain">
-                                    <param id="0" name="Text">&quot;+&quot;&amp;Slimebud.CRGValue</param>
+                                    <param id="0" name="Text">&quot;+&quot;&amp;FormatNumber.Call(&quot;Formatting&quot;, Slimebud.CRGValue)</param>
                                 </action>
                                 <action id="4" name="Set font color" sid="324187602582418" type="GGGain">
                                     <param id="0" name="Color">rgb(255, 51, 0)</param>
@@ -463,5 +467,70 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <comment>Format Number to better rending</comment>
+        <event-block sid="701082184578732">
+            <conditions>
+                <condition id="0" name="On function" sid="321413455532463" type="FormatNumber">
+                    <param id="0" name="Name">&quot;Formatting&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="922144214202848">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="962592447643654" type="System">
+                            <param id="0" name="First value">FormatNumber.Param(0)</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">1000000000</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="741462620561658" type="FormatNumber">
+                            <param id="0" name="Value">round(FormatNumber.Param(0)/1000000000*10)/10&amp;&quot;B&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="372907814791739">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="562087730585209" type="System" />
+                        <condition id="-8" name="Compare two values" sid="573195986992128" type="System">
+                            <param id="0" name="First value">FormatNumber.Param(0)</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">1000000</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="350731258853541" type="FormatNumber">
+                            <param id="0" name="Value">round(FormatNumber.Param(0)/1000000*10)/10&amp;&quot;M&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="743218716262631">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="987949059212867" type="System" />
+                        <condition id="-8" name="Compare two values" sid="804080255278518" type="System">
+                            <param id="0" name="First value">FormatNumber.Param(0)</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">1000</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="439567612774207" type="FormatNumber">
+                            <param id="0" name="Value">round(FormatNumber.Param(0)/1000*10)/10&amp;&quot;k&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="693290568537568">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="703047339787123" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="243912408384324" type="FormatNumber">
+                            <param id="0" name="Value">round(FormatNumber.Param(0)*10)/10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
