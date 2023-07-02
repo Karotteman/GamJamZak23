@@ -631,7 +631,7 @@
                 </instance>
                 <instance type="TotalRS_Icon" uid="28">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -654,7 +654,7 @@
                 <instance type="TotalRS_Value" uid="29">
                     <properties>
                         <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Retro Gaming,-32,700,0</font>
                         <color>255,51,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -708,7 +708,7 @@
                 <instance type="RSpC_Value" uid="31">
                     <properties>
                         <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Retro Gaming,-32,700,0</font>
                         <color>255,51,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -756,7 +756,7 @@
                 </instance>
                 <instance type="Sprite3" uid="33">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -895,28 +895,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TotalRS_Icon" uid="38">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1012</x>
-                        <y>782</y>
-                        <z>0</z>
-                        <width>19.183326721</width>
-                        <height>19.183326721</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="TotalGS_Icon" uid="39">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -932,6 +910,28 @@
                         <z>0</z>
                         <width>19</width>
                         <height>19</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="RS_Cost_Icon" uid="40">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1010</x>
+                        <y>782</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

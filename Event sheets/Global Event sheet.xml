@@ -10,7 +10,6 @@
                 <condition id="-2" name="On start of layout" sid="669582610897827" type="System" />
             </conditions>
             <actions>
-            <actions />
                 <action id="0" name="Play" sid="308951285067288" type="Audio">
                     <param id="0" name="Audio file">FutureBeatsPops</param>
                     <param id="2" name="Loop">1</param>
