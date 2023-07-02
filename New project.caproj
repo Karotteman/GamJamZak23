@@ -804,6 +804,9 @@
         <object-type name="BButton11_Cost" sid="739901232957075">
             <plugin id="Text" />
         </object-type>
+        <object-type name="TButton1Level" sid="723354010782247">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
