@@ -844,7 +844,7 @@
             </properties>
         </global-instance>
         <global-instance type="Browser" uid="38" />
-        <global-instance type="FormatNumber" uid="47" />
+        <global-instance type="FormatNumber" uid="48" />
     </global-instances>
     <sounds-folder />
     <music-folder>

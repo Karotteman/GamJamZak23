@@ -172,7 +172,7 @@
                                             <param id="0" name="Text">Buttons.Cost</param>
                                         </action>
                                         <action id="0" name="Set text" sid="167630785657031" type="TButton1_Description">
-                                            <param id="0" name="Text">&quot;+5 to passsive green slime production.&quot;</param>
+                                            <param id="0" name="Text">&quot;+5 to passive green slime production.&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -196,7 +196,7 @@
                                             <param id="0" name="Text">Buttons.Cost</param>
                                         </action>
                                         <action id="0" name="Set text" sid="821589290013318" type="TButton1_Description">
-                                            <param id="0" name="Text">&quot;+25 to passsive green slime production.&quot;</param>
+                                            <param id="0" name="Text">&quot;+25 to passive green slime production.&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -205,12 +205,12 @@
                                         <condition id="-8" name="Compare two values" sid="367668630520676" type="System">
                                             <param id="0" name="First value">Buttons.ErosionLevel</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Second value">150</param>
+                                            <param id="2" name="Second value">199</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Set text" sid="476203495751443" type="TButton1_Name">
-                                            <param id="0" name="Text">&quot;DEEPER!&quot;</param>
+                                            <param id="0" name="Text">&quot;A BIT MORE...&quot;</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="364487092869748" type="Buttons">
                                             <param id="0" name="Instance variable">Cost</param>
@@ -220,7 +220,55 @@
                                             <param id="0" name="Text">Buttons.Cost</param>
                                         </action>
                                         <action id="0" name="Set text" sid="949252181467960" type="TButton1_Description">
-                                            <param id="0" name="Text">&quot;+25 to passsive green slime production.&quot;</param>
+                                            <param id="0" name="Text">&quot;+25 to passive green slime production?&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="224570940981768">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="387499796168104" type="System">
+                                            <param id="0" name="First value">Buttons.ErosionLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">200</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="265183416418886" type="TButton1_Name">
+                                            <param id="0" name="Text">&quot;DOMINATION&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="563555611160266" type="Buttons">
+                                            <param id="0" name="Instance variable">Cost</param>
+                                            <param id="1" name="Value">round(Buttons.ErosionLevel*Buttons.ErosionLevel/5+10)+Slimebud.PGGValue*30+Slimebud.CGGValue*30</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="514585924211537" type="TButton1_Cost">
+                                            <param id="0" name="Text">Buttons.Cost</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="367778973202460" type="TButton1_Description">
+                                            <param id="0" name="Text">&quot;+100 to passive green slime production.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="208257171282232">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="978401628461072" type="System">
+                                            <param id="0" name="First value">Buttons.ErosionLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">250</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="525338990777110" type="TButton1_Name">
+                                            <param id="0" name="Text">&quot;IN CONTROL&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="526169346173153" type="Buttons">
+                                            <param id="0" name="Instance variable">Cost</param>
+                                            <param id="1" name="Value">round(Buttons.ErosionLevel*Buttons.ErosionLevel/5+10)+Slimebud.PGGValue*30+Slimebud.CGGValue*30</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="343397892998290" type="TButton1_Cost">
+                                            <param id="0" name="Text">Buttons.Cost</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="832576967468053" type="TButton1_Description">
+                                            <param id="0" name="Text">&quot;+10 to passive green slime production. You feel full.&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -252,18 +300,41 @@
                                 </action>
                             </actions>
                             <sub-events>
+                                <event-block sid="819517526901392">
+                                    <conditions>
+                                        <condition id="-21" name="Is between values" sid="618392102267990" type="System">
+                                            <param id="0" name="Value">Buttons.ErosionLevel</param>
+                                            <param id="1" name="Lower bound">200</param>
+                                            <param id="2" name="Upper bound">249</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="574174596237968" type="Slimebud">
+                                            <param id="0" name="Instance variable">PGGBase</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="333993726920611" type="Buttons">
+                                            <param id="0" name="Instance variable">ErosionLevel</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="242707398704370" type="Buttons">
+                                            <param id="0" name="Instance variable">Cost</param>
+                                            <param id="1" name="Value">round(Buttons.ErosionLevel*Buttons.ErosionLevel/5+10)+Slimebud.PGGValue*40+Slimebud.CGGValue*50</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                                 <event-block sid="858860496436642">
                                     <conditions>
                                         <condition id="-21" name="Is between values" sid="932018626950334" type="System">
                                             <param id="0" name="Value">Buttons.ErosionLevel</param>
                                             <param id="1" name="Lower bound">200</param>
-                                            <param id="2" name="Upper bound">248</param>
+                                            <param id="2" name="Upper bound">249</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="876409368717693" type="Slimebud">
+                                        <action id="-11" name="Add to" sid="876409368717693" type="Slimebud">
                                             <param id="0" name="Instance variable">PGGBase</param>
-                                            <param id="1" name="Value">Slimebud.PGGMultiplicator*100</param>
+                                            <param id="1" name="Value">100</param>
                                         </action>
                                         <action id="-11" name="Add to" sid="163647493154931" type="Buttons">
                                             <param id="0" name="Instance variable">ErosionLevel</param>
@@ -275,12 +346,39 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="675646197303657">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="923175481477070" type="System">
+                                            <param id="0" name="First value">Buttons.ErosionLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">199</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="241051070281488" type="Slimebud">
+                                            <param id="0" name="Instance variable">PGGMultiplicator</param>
+                                            <param id="1" name="Value">Slimebud.PGGMultiplicator*100</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="259878468278301" type="Buttons">
+                                            <param id="0" name="Instance variable">ErosionLevel</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="602568185549821" type="Buttons">
+                                            <param id="0" name="Instance variable">Cost</param>
+                                            <param id="1" name="Value">round(Buttons.ErosionLevel*Buttons.ErosionLevel/5+10)+Slimebud.PGGValue*30+Slimebud.CGGValue*30</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="101425013424424" type="Slimebud">
+                                            <param id="0" name="Instance variable">RGDropRate</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                                 <event-block sid="832945575077442">
                                     <conditions>
                                         <condition id="-21" name="Is between values" sid="376021388473045" type="System">
                                             <param id="0" name="Value">Buttons.ErosionLevel</param>
                                             <param id="1" name="Lower bound">150</param>
-                                            <param id="2" name="Upper bound">199</param>
+                                            <param id="2" name="Upper bound">198</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -815,11 +913,11 @@
                                         </action>
                                         <action id="-10" name="Set value" sid="474107192150440" type="Slimebud">
                                             <param id="0" name="Instance variable">PGGMultiplicator</param>
-                                            <param id="1" name="Value">Slimebud.PGGMultiplicator*0.90</param>
+                                            <param id="1" name="Value">Slimebud.PGGMultiplicator*0.70</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="753396456207966" type="Slimebud">
                                             <param id="0" name="Instance variable">CGGMultiplicator</param>
-                                            <param id="1" name="Value">Slimebud.CGGMultiplicator*0.90</param>
+                                            <param id="1" name="Value">Slimebud.CGGMultiplicator*0.70</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="484443060689339" type="Slimebud">
                                             <param id="0" name="Instance variable">PRGMultiplicator</param>
@@ -864,11 +962,11 @@
                                         </action>
                                         <action id="-10" name="Set value" sid="949388430510665" type="Slimebud">
                                             <param id="0" name="Instance variable">PGGMultiplicator</param>
-                                            <param id="1" name="Value">Slimebud.PGGMultiplicator*0.90</param>
+                                            <param id="1" name="Value">Slimebud.PGGMultiplicator*0.70</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="958801767563593" type="Slimebud">
                                             <param id="0" name="Instance variable">CGGMultiplicator</param>
-                                            <param id="1" name="Value">Slimebud.CGGMultiplicator*0.90</param>
+                                            <param id="1" name="Value">Slimebud.CGGMultiplicator*0.70</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="542085876725729" type="Slimebud">
                                             <param id="0" name="Instance variable">PRGMultiplicator</param>
@@ -913,11 +1011,11 @@
                                         </action>
                                         <action id="-10" name="Set value" sid="504754752100415" type="Slimebud">
                                             <param id="0" name="Instance variable">PGGMultiplicator</param>
-                                            <param id="1" name="Value">Slimebud.PGGMultiplicator*0.90</param>
+                                            <param id="1" name="Value">Slimebud.PGGMultiplicator*0.80</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="893961010675163" type="Slimebud">
                                             <param id="0" name="Instance variable">CGGMultiplicator</param>
-                                            <param id="1" name="Value">Slimebud.CGGMultiplicator*0.90</param>
+                                            <param id="1" name="Value">Slimebud.CGGMultiplicator*0.80</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="157236578112811" type="Slimebud">
                                             <param id="0" name="Instance variable">PRGMultiplicator</param>
@@ -942,7 +1040,7 @@
                                             <param id="0" name="Text">&quot;INCONTROLABLE&quot;</param>
                                         </action>
                                         <action id="0" name="Set text" sid="715953590398718" type="TButton2_Description">
-                                            <param id="0" name="Text">&quot;Increases value of red slime by 10%. Drops value of green slime by 5%.&quot;</param>
+                                            <param id="0" name="Text">&quot;Increases value of red slime by 90%. Drops value of green slime by 90%.&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -962,19 +1060,19 @@
                                         </action>
                                         <action id="-10" name="Set value" sid="534127864571804" type="Slimebud">
                                             <param id="0" name="Instance variable">PGGMultiplicator</param>
-                                            <param id="1" name="Value">Slimebud.PGGMultiplicator*0.90</param>
+                                            <param id="1" name="Value">Slimebud.PGGMultiplicator*0.01</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="580364409020515" type="Slimebud">
                                             <param id="0" name="Instance variable">CGGMultiplicator</param>
-                                            <param id="1" name="Value">Slimebud.CGGMultiplicator*0.90</param>
+                                            <param id="1" name="Value">Slimebud.CGGMultiplicator*0.01</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="568885355135675" type="Slimebud">
                                             <param id="0" name="Instance variable">PRGMultiplicator</param>
-                                            <param id="1" name="Value">Slimebud.PRGMultiplicator*1.05</param>
+                                            <param id="1" name="Value">Slimebud.PRGMultiplicator*1.90</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="193662221397458" type="Slimebud">
                                             <param id="0" name="Instance variable">CRGMultiplicator</param>
-                                            <param id="1" name="Value">Slimebud.CRGMultiplicator*1.05</param>
+                                            <param id="1" name="Value">Slimebud.CRGMultiplicator*1.90</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="682233243810898" type="Buttons2">
                                             <param id="0" name="Instance variable">Level</param>
@@ -988,7 +1086,7 @@
                                             <param id="0" name="Visibility">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="447341223103883" type="TButton2_Name">
-                                            <param id="0" name="Text">&quot;HAS HE... TAKEN CONTROL?&quot;</param>
+                                            <param id="0" name="Text">&quot;IS IT... IN CONTROL?&quot;</param>
                                         </action>
                                         <action id="0" name="Set text" sid="507396312966144" type="TButton2_Description">
                                             <param id="0" name="Text">&quot;There is nothing more to do... You feel it inside...&quot;</param>
@@ -1183,43 +1281,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="123837557135519">
-            <conditions>
-                <condition id="-21" name="Is between values" sid="330389975397247" type="System">
-                    <param id="0" name="Value">Buttons.ErosionLevel</param>
-                    <param id="1" name="Lower bound">150</param>
-                    <param id="2" name="Upper bound">199</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-11" name="Add to" sid="176696280397063" type="Slimebud">
-                    <param id="0" name="Instance variable">PGGBase</param>
-                    <param id="1" name="Value">25</param>
-                </action>
-                <action id="-10" name="Set value" sid="797844331003385" type="Buttons">
-                    <param id="0" name="Instance variable">Cost</param>
-                    <param id="1" name="Value">round(Buttons.ErosionLevel*Buttons.ErosionLevel/5+10)+Slimebud.PGGValue*30+Slimebud.CGGValue*30</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="500516067540490">
-            <conditions>
-                <condition id="-21" name="Is between values" sid="525208477109617" type="System">
-                    <param id="0" name="Value">Buttons.ErosionLevel</param>
-                    <param id="1" name="Lower bound">150</param>
-                    <param id="2" name="Upper bound">199</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-11" name="Add to" sid="796006255935951" type="Slimebud">
-                    <param id="0" name="Instance variable">PGGBase</param>
-                    <param id="1" name="Value">25</param>
-                </action>
-                <action id="-10" name="Set value" sid="852407913344275" type="Buttons">
-                    <param id="0" name="Instance variable">Cost</param>
-                    <param id="1" name="Value">round(Buttons.ErosionLevel*Buttons.ErosionLevel/5+10)+Slimebud.PGGValue*30+Slimebud.CGGValue*30</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
