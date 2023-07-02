@@ -1041,10 +1041,6 @@
                                         <action id="-2" name="Set Y" sid="241195200503508" type="BButton11_Name">
                                             <param id="0" name="Y">BButton11_Name.Y+10</param>
                                         </action>
-                                        <action id="-11" name="Add to" sid="289013734642428" type="Button11">
-                                            <param id="0" name="Instance variable">Level</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
                                     </actions>
                                     <sub-events>
                                         <event-block sid="912777861401498">
@@ -1070,6 +1066,10 @@
                                                 </action>
                                                 <action id="0" name="Set text" sid="445743108967086" type="BButton11_Cost">
                                                     <param id="0" name="Text">Button11.Cost</param>
+                                                </action>
+                                                <action id="-11" name="Add to" sid="289013734642428" type="Button11">
+                                                    <param id="0" name="Instance variable">Level</param>
+                                                    <param id="1" name="Value">1</param>
                                                 </action>
                                             </actions>
                                         </event-block>
