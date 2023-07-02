@@ -167,7 +167,7 @@
                     <actions>
                         <action id="-10" name="Set value" sid="968847767698543" type="Buttons">
                             <param id="0" name="Instance variable">Cost</param>
-                            <param id="1" name="Value">Buttons.ErosionLevel*Buttons.ErosionLevel*Buttons.ErosionLevel+10</param>
+                            <param id="1" name="Value">10</param>
                         </action>
                         <action id="0" name="Set text" sid="581671249296612" type="TButton1_Cost">
                             <param id="0" name="Text">Buttons.Cost</param>
@@ -210,6 +210,16 @@
         </event-group>
         <event-group description="Script relatif au fonctionnement du bouton 2" sid="885397075387506" title="Button 2">
             <sub-events>
+                <event-block sid="782133372457021">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="611360991724843" type="System">
+                            <param id="0" name="First value">Slimebud.RedSlime</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
                 <event-block sid="958843159743459">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="542401233053691" type="System" />
@@ -237,28 +247,63 @@
                             <param id="2" name="Second value">Buttons2.Cost</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-12" name="Subtract from" sid="882602365291932" type="Slimebud">
-                            <param id="0" name="Instance variable">RedSlime</param>
-                            <param id="1" name="Value">Buttons2.Cost</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="188143197385923" type="Slimebud">
-                            <param id="0" name="Instance variable">PGGMultiplicator</param>
-                            <param id="1" name="Value">0.95</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="164480007909389" type="Slimebud">
-                            <param id="0" name="Instance variable">CGGMultiplicator</param>
-                            <param id="1" name="Value">0.95</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="566271395796407" type="Slimebud">
-                            <param id="0" name="Instance variable">PRGMultiplicator</param>
-                            <param id="1" name="Value">1.10</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="358718983209734" type="Slimebud">
-                            <param id="0" name="Instance variable">CRGMultiplicator</param>
-                            <param id="1" name="Value">1.10</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="338548629296137">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="256665004742730" type="System">
+                                    <param id="0" name="First value">Buttons2.Level</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="882602365291932" type="Slimebud">
+                                    <param id="0" name="Instance variable">RedSlime</param>
+                                    <param id="1" name="Value">Buttons2.Cost</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="188143197385923" type="Slimebud">
+                                    <param id="0" name="Instance variable">PGGMultiplicator</param>
+                                    <param id="1" name="Value">0.95</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="164480007909389" type="Slimebud">
+                                    <param id="0" name="Instance variable">CGGMultiplicator</param>
+                                    <param id="1" name="Value">0.95</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="566271395796407" type="Slimebud">
+                                    <param id="0" name="Instance variable">PRGMultiplicator</param>
+                                    <param id="1" name="Value">1.10</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="358718983209734" type="Slimebud">
+                                    <param id="0" name="Instance variable">CRGMultiplicator</param>
+                                    <param id="1" name="Value">1.10</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="651990053139356" type="Buttons2">
+                                    <param id="0" name="Instance variable">Cost</param>
+                                    <param id="1" name="Value">Buttons2.Cost*Buttons2.Cost</param>
+                                </action>
+                                <action id="0" name="Set text" sid="948998464972513" type="TButton2_Cost">
+                                    <param id="0" name="Text">Buttons2.Cost</param>
+                                </action>
+                                <action id="0" name="Set text" sid="848093248283186" type="TButton2_Name">
+                                    <param id="0" name="Text">&quot;RECEPTIVE&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="860900956274419" type="TButton2_Description">
+                                    <param id="0" name="Text">&quot;Increases value of red slime to 120%. Drops value of green slime to 90%.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="726994897986046">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="669732522251778" type="System">
+                                    <param id="0" name="First value">Buttons2.Level</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
