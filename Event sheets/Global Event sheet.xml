@@ -10,7 +10,6 @@
                 <condition id="-2" name="On start of layout" sid="669582610897827" type="System" />
             </conditions>
             <actions>
-            <actions />
                 <action id="0" name="Play" sid="308951285067288" type="Audio">
                     <param id="0" name="Audio file">FutureBeatsPops</param>
                     <param id="2" name="Loop">1</param>
@@ -133,6 +132,21 @@
                             <param id="0" name="Scale">Slimebud.GScaleMod</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="134474053110986">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Is visible" sid="149792333140889" type="TotalRS_Icon" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="718465904384795" type="TotalRS_Icon">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="700764067455046" type="TotalRS_Value">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="151091894712335">
                     <conditions>

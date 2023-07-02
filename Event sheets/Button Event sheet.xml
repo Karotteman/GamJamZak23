@@ -3,6 +3,18 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Button Event sheet</name>
     <events>
+        <event-block sid="834068688088601">
+            <conditions>
+                <condition id="2" inverted="1" name="Mouse button is down" sid="607772004982374" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="901611424522335" type="Button11">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>Tabs Behavior</comment>
         <event-group description="" sid="774194011949733" title="Tank Tab">
             <sub-events>
@@ -126,6 +138,24 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-group description="Top-Left button" sid="151234873066831" title="Button 11">
+                    <sub-events>
+                        <event-block sid="829207140510381">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="669092537731983" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Button11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="332524855439985" type="Button11">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
         <event-group description="Script relatif au bon fonctionnement du premier bouton" sid="491083067253942" title="Button 1">
