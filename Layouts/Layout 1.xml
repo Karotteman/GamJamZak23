@@ -136,7 +136,7 @@
                         <PGGValue>0.1</PGGValue>
                         <RedSlime>10</RedSlime>
                         <RScaleMod>1</RScaleMod>
-                        <RGDropRate>50</RGDropRate>
+                        <RGDropRate>0</RGDropRate>
                         <CRGValue>1</CRGValue>
                         <PRGValue>0</PRGValue>
                         <SlimeLeftOver>0</SlimeLeftOver>

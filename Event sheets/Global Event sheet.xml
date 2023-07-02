@@ -89,7 +89,7 @@
                             <param id="3" name="Y">230</param>
                         </action>
                         <action id="9" name="Set scale" sid="968763123697404" type="CRedGoutte">
-                            <param id="0" name="Scale">Slimebud.GScaleMod</param>
+                            <param id="0" name="Scale">Slimebud.PRGBase/2</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="344342799895508" type="CRedGoutte">
                             <param id="0" name="Opacity">60</param>
@@ -108,7 +108,7 @@
                             <param id="3" name="Y">230</param>
                         </action>
                         <action id="9" name="Set scale" sid="734544455018675" type="CGreenGoutte">
-                            <param id="0" name="Scale">Slimebud.GScaleMod</param>
+                            <param id="0" name="Scale">Slimebud.PGGBase/2</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="638820597688276" type="CGreenGoutte">
                             <param id="0" name="Opacity">60</param>
@@ -143,7 +143,7 @@
                             <param id="3" name="Y">230</param>
                         </action>
                         <action id="9" name="Set scale" sid="516826757703709" type="CRedGoutte">
-                            <param id="0" name="Scale">Slimebud.CRGBase</param>
+                            <param id="0" name="Scale">Slimebud.CRGBase/2</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -224,7 +224,7 @@
                             <param id="3" name="Y">230</param>
                         </action>
                         <action id="9" name="Set scale" sid="486176302197564" type="CGreenGoutte">
-                            <param id="0" name="Scale">Slimebud.CGGBase</param>
+                            <param id="0" name="Scale">Slimebud.CGGBase/2</param>
                         </action>
                         <action id="0" name="Call function" sid="782691437772559" type="FormatNumber">
                             <param id="0" name="Name">&quot;Formatting&quot;</param>
