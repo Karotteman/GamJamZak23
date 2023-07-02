@@ -33,6 +33,40 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="301829938547991">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="464539928503803" type="Buttons">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="698654284288340" type="Buttons">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="295880812341858" type="TButton1_Cost">
+                            <param id="0" name="Y">TButton1_Cost.Y -10</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="753667262690071" type="TButton1_Description">
+                            <param id="0" name="Y">TButton1_Description.Y-10</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="641844750511845" type="TButton1_Name">
+                            <param id="0" name="Y">TButton1_Name.Y-10</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="248120635987233" type="Button1_SIcon">
+                            <param id="0" name="Y">Button1_SIcon.Y-10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="245309402256690">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="450248866496592" type="Buttons2">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
             </sub-events>
         </event-block>
         <comment>Update Buttons Background</comment>
@@ -383,6 +417,9 @@
                                 <action id="-2" name="Set Y" sid="222131515379811" type="TButton1_Name">
                                     <param id="0" name="Y">TButton1_Name.Y+10</param>
                                 </action>
+                                <action id="-2" name="Set Y" sid="751464933964208" type="Button1_SIcon">
+                                    <param id="0" name="Y">Button1_SIcon.Y+10</param>
+                                </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="819517526901392">
@@ -612,7 +649,23 @@
                                     <param id="0" name="Layer">3</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="5" name="Set frame" sid="155768830361679" type="Buttons2">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="965294931412145" type="Buttons2">
+                                    <param id="0" name="Y">TButton2_Cost.Y +10</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="666091849603153" type="TButton2_Description">
+                                    <param id="0" name="Y">TButton2_Description.Y+10</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="448120596006019" type="TButton2_Name">
+                                    <param id="0" name="Y">TButton2_Name.Y+10</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="625453503080136" type="RS_Cost_Icon">
+                                    <param id="0" name="Y">RS_Cost_Icon.Y+10</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <event-block sid="338548629296137">
                                     <conditions>
