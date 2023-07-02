@@ -162,7 +162,7 @@
                                             <param id="0" name="Text">Buttons.Cost</param>
                                         </action>
                                         <action id="0" name="Set text" sid="227013233325072" type="TButton1_Description">
-                                            <param id="0" name="Text">&quot;+2 to passive green slime production.&quot;</param>
+                                            <param id="0" name="Text">&quot;+2 to base passive green slime production.&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -186,7 +186,7 @@
                                             <param id="0" name="Text">Buttons.Cost</param>
                                         </action>
                                         <action id="0" name="Set text" sid="167630785657031" type="TButton1_Description">
-                                            <param id="0" name="Text">&quot;+5 to passive green slime production.&quot;</param>
+                                            <param id="0" name="Text">&quot;+5 to base passive green slime production.&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -210,7 +210,7 @@
                                             <param id="0" name="Text">Buttons.Cost</param>
                                         </action>
                                         <action id="0" name="Set text" sid="821589290013318" type="TButton1_Description">
-                                            <param id="0" name="Text">&quot;+25 to passive green slime production.&quot;</param>
+                                            <param id="0" name="Text">&quot;+25 to base passive green slime production.&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -234,7 +234,7 @@
                                             <param id="0" name="Text">Buttons.Cost</param>
                                         </action>
                                         <action id="0" name="Set text" sid="949252181467960" type="TButton1_Description">
-                                            <param id="0" name="Text">&quot;+25 to passive green slime production?&quot;</param>
+                                            <param id="0" name="Text">&quot;+25 to base passive green slime production?&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -258,7 +258,7 @@
                                             <param id="0" name="Text">Buttons.Cost</param>
                                         </action>
                                         <action id="0" name="Set text" sid="367778973202460" type="TButton1_Description">
-                                            <param id="0" name="Text">&quot;+100 to passive green slime production.&quot;</param>
+                                            <param id="0" name="Text">&quot;+100 to base passive green slime production.&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
