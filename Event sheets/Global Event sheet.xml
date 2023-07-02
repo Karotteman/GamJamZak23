@@ -157,6 +157,46 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="482573984691292">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Is visible" sid="596030822860037" type="RS_Cost_Icon" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="702788930923629" type="RS_Cost_Icon">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="277484675743667">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Is visible" sid="117133478480051" type="TButton2_Cost" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="971538831095377" type="TButton2_Cost">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="807948184382716">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Is visible" sid="262510941365439" type="TButton2_Description" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="546999499280239" type="TButton2_Description">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="611097321377462">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Is visible" sid="969177199335881" type="TButton2_Name" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="905544162354162" type="TButton2_Name">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="151091894712335">

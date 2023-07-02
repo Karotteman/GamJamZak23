@@ -130,13 +130,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <GreenSlime>50000000</GreenSlime>
+                        <GreenSlime>10</GreenSlime>
                         <GScaleMod>1</GScaleMod>
                         <CGGValue>0</CGGValue>
                         <PGGValue>0.1</PGGValue>
-                        <RedSlime>50000000000</RedSlime>
+                        <RedSlime>10</RedSlime>
                         <RScaleMod>1</RScaleMod>
-                        <RGDropRate>0</RGDropRate>
+                        <RGDropRate>50</RGDropRate>
                         <CRGValue>1</CRGValue>
                         <PRGValue>0</PRGValue>
                         <SlimeLeftOver>0</SlimeLeftOver>
@@ -779,7 +779,7 @@
                 <instance type="TButton2_Name" uid="34">
                     <properties>
                         <text>INOFFENSIVE</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Retro Gaming,-23,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -806,7 +806,7 @@
                 <instance type="TButton2_Cost" uid="35">
                     <properties>
                         <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Retro Gaming,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Right</horizontal-alignment>
@@ -833,7 +833,7 @@
                 <instance type="TButton2_Description" uid="36">
                     <properties>
                         <text>Increases value of red goo drops to 110%. Reduces value of slime drops to 95%.</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Retro Gaming,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
