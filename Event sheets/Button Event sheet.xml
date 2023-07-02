@@ -1436,14 +1436,6 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-11" name="Add to" sid="107198755312806" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CGGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PGGBase*Slimebud.PGGMultiplicator*3/100</param>
-                                                </action>
-                                                <action id="-11" name="Add to" sid="651431797171819" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CRGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PRGBase*Slimebud.PRGMultiplicator*3/100</param>
-                                                </action>
                                                 <action id="-10" name="Set value" sid="990869262827412" type="Button11">
                                                     <param id="0" name="Instance variable">Cost</param>
                                                     <param id="1" name="Value">35000</param>
@@ -1473,14 +1465,6 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-11" name="Add to" sid="682229128732071" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CGGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PGGBase*Slimebud.PGGMultiplicator*2/100</param>
-                                                </action>
-                                                <action id="-11" name="Add to" sid="202809896717760" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CRGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PRGBase*Slimebud.PRGMultiplicator*2/100</param>
-                                                </action>
                                                 <action id="-10" name="Set value" sid="789791918972960" type="Button11">
                                                     <param id="0" name="Instance variable">Cost</param>
                                                     <param id="1" name="Value">50000</param>
@@ -1510,14 +1494,6 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-11" name="Add to" sid="714084940830061" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CGGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PGGBase*Slimebud.PGGMultiplicator*5/100</param>
-                                                </action>
-                                                <action id="-11" name="Add to" sid="544622724442795" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CRGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PRGBase*Slimebud.PRGMultiplicator*5/100</param>
-                                                </action>
                                                 <action id="-10" name="Set value" sid="199008025742323" type="Button11">
                                                     <param id="0" name="Instance variable">Cost</param>
                                                     <param id="1" name="Value">750000</param>
