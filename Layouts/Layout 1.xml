@@ -149,7 +149,7 @@
                         <PGGBase>0</PGGBase>
                         <CGGBase>1</CGGBase>
                         <PRGBase>1</PRGBase>
-                        <CRGBase>0</CRGBase>
+                        <CRGBase>1</CRGBase>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
