@@ -9,17 +9,7 @@
                     <param id="0" name="Mouse button">0</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="110718670300299" type="Button12">
-                    <param id="0" name="Frame number">0</param>
-                </action>
-                <action id="5" name="Set frame" sid="466061654969003" type="Button13">
-                    <param id="0" name="Frame number">0</param>
-                </action>
-                <action id="5" name="Set frame" sid="461982878729071" type="Button14">
-                    <param id="0" name="Frame number">0</param>
-                </action>
-            </actions>
+            <actions />
             <sub-events>
                 <event-block sid="449154698672702">
                     <conditions>
@@ -30,7 +20,7 @@
                     </conditions>
                     <actions>
                         <action id="5" name="Set frame" sid="901611424522335" type="Button11">
-                            <param id="0" name="Frame number">0</param>
+                            <param id="0" name="Frame number">2</param>
                         </action>
                         <action id="-2" name="Set Y" sid="785166432230958" type="BButton11_Cost">
                             <param id="0" name="Y">BButton11_Cost.Y -10</param>
@@ -40,6 +30,72 @@
                         </action>
                         <action id="-2" name="Set Y" sid="743195900718389" type="BButton11_Name">
                             <param id="0" name="Y">BButton11_Name.Y-10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Update Buttons Background</comment>
+        <event-block sid="728702300015262">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="532233160489246" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="900023469509292">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="379371489848782" type="System">
+                            <param id="0" name="First value">Buttons.AnimationFrame</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="282783745895800" type="System">
+                            <param id="0" name="First value">Slimebud.GreenSlime</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">Buttons.Cost</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="654341443340484" type="Buttons">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="572910059374858">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="160267434959265" type="System">
+                            <param id="0" name="First value">Buttons2.AnimationFrame</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="169649399073945" type="System">
+                            <param id="0" name="First value">Slimebud.RedSlime</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">Buttons2.Cost</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="470982299028050" type="Buttons2">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="970331367893164">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="269784276422590" type="System">
+                            <param id="0" name="First value">Button11.AnimationFrame</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="616989442779183" type="System">
+                            <param id="0" name="First value">Slimebud.GreenSlime</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">Button11.Cost</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="148141430883797" type="Button11">
+                            <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -314,6 +370,18 @@
                                 <action id="-12" name="Subtract from" sid="951181926168048" type="Slimebud">
                                     <param id="0" name="Instance variable">GreenSlime</param>
                                     <param id="1" name="Value">Buttons.Cost</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="634708453766548" type="Buttons">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="557394401123820" type="TButton1_Cost">
+                                    <param id="0" name="Y">TButton1_Cost.Y +10</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="377952439562651" type="TButton1_Description">
+                                    <param id="0" name="Y">TButton1_Description.Y+10</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="222131515379811" type="TButton1_Name">
+                                    <param id="0" name="Y">TButton1_Name.Y+10</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -1436,14 +1504,6 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-11" name="Add to" sid="107198755312806" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CGGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PGGBase*Slimebud.PGGMultiplicator*3/100</param>
-                                                </action>
-                                                <action id="-11" name="Add to" sid="651431797171819" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CRGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PRGBase*Slimebud.PRGMultiplicator*3/100</param>
-                                                </action>
                                                 <action id="-10" name="Set value" sid="990869262827412" type="Button11">
                                                     <param id="0" name="Instance variable">Cost</param>
                                                     <param id="1" name="Value">13000</param>
@@ -1473,14 +1533,6 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-11" name="Add to" sid="682229128732071" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CGGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PGGBase*Slimebud.PGGMultiplicator*2/100</param>
-                                                </action>
-                                                <action id="-11" name="Add to" sid="202809896717760" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CRGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PRGBase*Slimebud.PRGMultiplicator*2/100</param>
-                                                </action>
                                                 <action id="-10" name="Set value" sid="789791918972960" type="Button11">
                                                     <param id="0" name="Instance variable">Cost</param>
                                                     <param id="1" name="Value">15000</param>
@@ -1510,14 +1562,6 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-11" name="Add to" sid="714084940830061" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CGGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PGGBase*Slimebud.PGGMultiplicator*5/100</param>
-                                                </action>
-                                                <action id="-11" name="Add to" sid="544622724442795" type="Slimebud">
-                                                    <param id="0" name="Instance variable">CRGBase</param>
-                                                    <param id="1" name="Value">Slimebud.PRGBase*Slimebud.PRGMultiplicator*5/100</param>
-                                                </action>
                                                 <action id="-10" name="Set value" sid="199008025742323" type="Button11">
                                                     <param id="0" name="Instance variable">Cost</param>
                                                     <param id="1" name="Value">20000</param>

@@ -392,7 +392,7 @@
                 <type>TButton1_Cost</type>
             </container>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="388762570391158" speed="5">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="388762570391158" speed="0">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
                         <collision-poly>
                             <point x="0.00526316" y="0.0204082" />
@@ -401,6 +401,36 @@
                             <point x="0.994737" y="0.979592" />
                             <point x="0.5" y="1" />
                             <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="-0.0888889" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="-0.0888889" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -419,7 +449,7 @@
                 <type>TButton2_Name</type>
             </container>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="207035858685381" speed="5">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="207035858685381" speed="0">
                     <frame duration="1" hotspotX="1" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
                         <collision-poly>
                             <point x="0.00526316" y="0.0204082" />
@@ -430,13 +460,43 @@
                             <point x="0.00526316" y="0.979592" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="-0.0888889" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="-0.0888889" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Buttons3" sid="103367125190420">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929030234322755" speed="5">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929030234322755" speed="0">
                     <frame duration="1" hotspotX="0" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
                         <collision-poly>
                             <point x="0.00526315" y="0.0204082" />
@@ -447,13 +507,43 @@
                             <point x="0.00526315" y="0.979592" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1.02222" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1.02222" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Buttons4" sid="131838878341583">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869876049395218" speed="5">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869876049395218" speed="0">
                     <frame duration="1" hotspotX="1" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
                         <collision-poly>
                             <point x="0.00526316" y="0.0204082" />
@@ -462,6 +552,36 @@
                             <point x="0.994737" y="0.979592" />
                             <point x="0.5" y="1" />
                             <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1.02222" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1.02222" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -674,7 +794,7 @@
                 <instance-variable name="MaxLevel" sid="767987696430195" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529865222588892" speed="0">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529865222588892" speed="0">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
                         <collision-poly>
                             <point x="0.994737" y="0.979592" />
@@ -695,13 +815,33 @@
                             <point x="0.994737" y="0.0222222" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="-0.0888889" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Button12" sid="105356498117080">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="243608141925377" speed="0">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="243608141925377" speed="0">
                     <frame duration="1" hotspotX="1" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
                         <collision-poly>
                             <point x="0.00526316" y="0.0204082" />
@@ -722,13 +862,33 @@
                             <point x="0.00526316" y="0.977778" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="-0.0888889" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Button13" sid="956918716263247">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129227572870014" speed="0">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129227572870014" speed="0">
                     <frame duration="1" hotspotX="0" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
                         <collision-poly>
                             <point x="0.00526315" y="0.0204082" />
@@ -749,13 +909,33 @@
                             <point x="0.00526316" y="0.977778" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1.02222" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Button14" sid="617765080762016">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706205820637014" speed="0">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706205820637014" speed="0">
                     <frame duration="1" hotspotX="1" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_grey.png">
                         <collision-poly>
                             <point x="0.994737" y="0.979592" />
@@ -774,6 +954,26 @@
                             <point x="0.00526315" y="0.0222222" />
                             <point x="0.5" y="0" />
                             <point x="0.994737" y="0.0222222" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1.02041" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0204082" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0204082" />
+                            <point x="0.994737" y="0.979592" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.979592" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="1.02222" original-source="D:\Users\Karotteman\Downloads\kenney_ui-pack-rpg-expansion\PNG\buttonLong_blue_pressed.png">
+                        <collision-poly>
+                            <point x="0.00526316" y="0.0222222" />
+                            <point x="0.5" y="0" />
+                            <point x="0.994737" y="0.0222222" />
+                            <point x="0.994737" y="0.977778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00526316" y="0.977778" />
                         </collision-poly>
                     </frame>
                 </animation>
