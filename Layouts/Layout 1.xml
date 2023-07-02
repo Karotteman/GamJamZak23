@@ -460,7 +460,7 @@
                     </properties>
                     <instance-variables>
                         <Cost>0</Cost>
-                        <ErosionLevel>120</ErosionLevel>
+                        <ErosionLevel>0</ErosionLevel>
                         <MaxLevel>100</MaxLevel>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
