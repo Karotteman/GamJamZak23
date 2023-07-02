@@ -10,10 +10,40 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="5" name="Set frame" sid="901611424522335" type="Button11">
+                <action id="5" name="Set frame" sid="110718670300299" type="Button12">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="466061654969003" type="Button13">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="461982878729071" type="Button14">
                     <param id="0" name="Frame number">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="449154698672702">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="248433716746968" type="Button11">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="901611424522335" type="Button11">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="785166432230958" type="BButton11_Cost">
+                            <param id="0" name="Y">BButton11_Cost.Y -10</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="118223967510020" type="BButton11_Description">
+                            <param id="0" name="Y">BButton11_Description.Y-10</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="743195900718389" type="BButton11_Name">
+                            <param id="0" name="Y">BButton11_Name.Y-10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <comment>Tabs Behavior</comment>
         <event-group description="" sid="774194011949733" title="Tank Tab">
@@ -138,24 +168,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-group description="Top-Left button" sid="151234873066831" title="Button 11">
-                    <sub-events>
-                        <event-block sid="829207140510381">
-                            <conditions>
-                                <condition id="6" name="On object clicked" sid="669092537731983" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">Button11</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="332524855439985" type="Button11">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
             </sub-events>
         </event-group>
         <event-group description="Script relatif au bon fonctionnement du premier bouton" sid="491083067253942" title="Button 1">
@@ -303,6 +315,126 @@
                             </conditions>
                             <actions />
                         </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Buttons in Buddy Tab" sid="641651829162495" title="Buddy Buttons">
+            <sub-events>
+                <event-block sid="874271605971452">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="627457916333767" type="System">
+                            <param id="0" name="Layer">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-group description="Top-Left button" sid="151234873066831" title="Button 11">
+                            <sub-events>
+                                <event-block sid="829207140510381">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="669092537731983" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Button11</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="483898695226608" type="System">
+                                            <param id="0" name="First value">Slimebud.GreenSlime</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Second value">Button11.Cost</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="332524855439985" type="Button11">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="405457269858064" type="BButton11_Cost">
+                                            <param id="0" name="Y">BButton11_Cost.Y +10</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="107213240061915" type="BButton11_Description">
+                                            <param id="0" name="Y">BButton11_Description.Y+10</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="241195200503508" type="BButton11_Name">
+                                            <param id="0" name="Y">BButton11_Name.Y+10</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="289013734642428" type="Button11">
+                                            <param id="0" name="Instance variable">Level</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="912777861401498">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="569083286887606" type="System">
+                                                    <param id="0" name="First value">Button11.Level</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Add to" sid="224344920888545" type="Slimebud">
+                                                    <param id="0" name="Instance variable">CGGBase</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-11" name="Add to" sid="772574789403007" type="Slimebud">
+                                                    <param id="0" name="Instance variable">CRGBase</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="270950903101689" type="Button11">
+                                                    <param id="0" name="Instance variable">Cost</param>
+                                                    <param id="1" name="Value">100</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="445743108967086" type="BButton11_Cost">
+                                                    <param id="0" name="Text">Button11.Cost</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="548438883503251">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="781237142594069" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Button12</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="490181995892331" type="Button12">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="899279649076765">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="373564106982093" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Button13</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="565982844659768" type="Button13">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="698564027998351">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="293091041154879" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Button14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="328732673995419" type="Button14">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                     </sub-events>
                 </event-block>
             </sub-events>

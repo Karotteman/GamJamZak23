@@ -16,6 +16,9 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="0" name="Set text" sid="129966388219962" type="BButton11_Cost">
+                    <param id="0" name="Text">Button11.Cost</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="225120274867862">
@@ -38,10 +41,10 @@
                     <param id="0" name="Text">round(Slimebud.RedSlime)</param>
                 </action>
                 <action id="0" name="Set text" sid="253753279015334" type="GSpC_Value">
-                    <param id="0" name="Text">Slimebud.PGGValue</param>
+                    <param id="0" name="Text">round(Slimebud.PGGValue)</param>
                 </action>
                 <action id="0" name="Set text" sid="728993309324302" type="RSpC_Value">
-                    <param id="0" name="Text">Slimebud.PRGValue</param>
+                    <param id="0" name="Text">round(Slimebud.PRGValue)</param>
                 </action>
                 <action id="0" name="Set text" sid="235862692018000" type="TButton1_Cost">
                     <param id="0" name="Text">Buttons.Cost</param>

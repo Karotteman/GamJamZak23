@@ -984,13 +984,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Button11" uid="40">
+                <instance type="Button11" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Cost>10</Cost>
+                        <Level>0</Level>
+                        <MaxLevel>10</MaxLevel>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1068,6 +1073,87 @@
                         <depth>0</depth>
                         <hotspotX>1</hotspotX>
                         <hotspotY>1.020408154</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BButton11_Name" uid="44">
+                    <properties>
+                        <text>JUMP!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-22.4,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>134</x>
+                        <y>772</y>
+                        <z>0</z>
+                        <width>271</width>
+                        <height>29</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BButton11_Description" uid="45">
+                    <properties>
+                        <text>+1 Slime/click</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>136</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>373</width>
+                        <height>77</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BButton11_Cost" uid="46">
+                    <properties>
+                        <text>Button11.Cost</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Retro Gaming,-16,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Right</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>304</x>
+                        <y>773</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
