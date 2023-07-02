@@ -34,6 +34,14 @@
                     <param id="0" name="Instance variable">PRGValue</param>
                     <param id="1" name="Value">Slimebud.PRGBase*Slimebud.PRGMultiplicator</param>
                 </action>
+                <action id="-10" name="Set value" sid="942345377646999" type="Slimebud">
+                    <param id="0" name="Instance variable">PGGValue</param>
+                    <param id="1" name="Value">Slimebud.PGGBase*Slimebud.PGGMultiplicator</param>
+                </action>
+                <action id="-10" name="Set value" sid="631778345473771" type="Slimebud">
+                    <param id="0" name="Instance variable">CGGValue</param>
+                    <param id="1" name="Value">Slimebud.CGGBase*Slimebud.CGGMultiplicator</param>
+                </action>
                 <action id="0" name="Set text" sid="315589372487484" type="TotalGS_Value">
                     <param id="0" name="Text">round(Slimebud.GreenSlime)</param>
                 </action>
