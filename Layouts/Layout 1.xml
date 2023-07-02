@@ -130,7 +130,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <GreenSlime>10000</GreenSlime>
+                        <GreenSlime>50000</GreenSlime>
                         <GScaleMod>1</GScaleMod>
                         <CGGValue>0</CGGValue>
                         <PGGValue>0.1</PGGValue>
