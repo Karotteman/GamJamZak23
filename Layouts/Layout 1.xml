@@ -130,13 +130,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <GreenSlime>11200000000</GreenSlime>
+                        <GreenSlime>0</GreenSlime>
                         <GScaleMod>1</GScaleMod>
                         <CGGValue>0</CGGValue>
                         <PGGValue>0.1</PGGValue>
-                        <RedSlime>1000000000000</RedSlime>
+                        <RedSlime>0</RedSlime>
                         <RScaleMod>1</RScaleMod>
-                        <RGDropRate>50</RGDropRate>
+                        <RGDropRate>0</RGDropRate>
                         <CRGValue>1</CRGValue>
                         <PRGValue>0</PRGValue>
                         <SlimeLeftOver>0</SlimeLeftOver>
@@ -147,7 +147,7 @@
                         <PRGMultiplicator>1</PRGMultiplicator>
                         <CRGMultiplicator>1</CRGMultiplicator>
                         <PGGBase>0</PGGBase>
-                        <CGGBase>10</CGGBase>
+                        <CGGBase>1</CGGBase>
                         <PRGBase>1</PRGBase>
                         <CRGBase>0</CRGBase>
                     </instance-variables>
@@ -460,7 +460,7 @@
                     </properties>
                     <instance-variables>
                         <Cost>0</Cost>
-                        <ErosionLevel>120</ErosionLevel>
+                        <ErosionLevel>0</ErosionLevel>
                         <MaxLevel>100</MaxLevel>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
